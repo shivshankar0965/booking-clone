@@ -1,0 +1,257 @@
+#mvxfn{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gfvno_njl{
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+   
+    border-radius: 10px;
+}
+.gfvno_njl img{
+    width: 35%;
+    height: 150px;
+  
+}
+.gfvno_njl div p{
+    width: 100%;
+    
+}
+.gfvno_njl div h2{
+    margin-top: 0px;
+}
+.gfvno_njl div button{
+    border:1px solid blue;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: blue;
+}
+#diifr{
+     border: none;
+    background-color: #fff;
+    color: blue;
+}
+.gfvno_njl div button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+#werfc{
+    width: 77%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 30px;
+}
+#werfc h2{
+    margin-bottom: 8px;
+}
+#werfc p{
+    margin-top: 0px;
+}
+#werfc button{
+    border:1px solid blue;
+    padding: 11px 15px;
+    background-color: #fff;
+    color: blue;
+}
+#werfc button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+#werfc input{
+    width: 40%;
+    padding-left: 5px;
+    margin-right: 10px;
+    height: 30px;
+}
+#rtdf {
+    width: 13%;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+#rtdf img{
+    width: 100%;
+}
+#uidcf{
+    margin-left: 135px;
+    margin-bottom: 15px;
+    color: rgb(37, 36, 36);
+}
+#yrstf{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+.ateygcb{
+    width: 32.6%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ateygcb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ateygcb:hover .ateygcb img{
+    transform: scale(1.2);
+}
+.fuhvb{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 90%;
+}
+.fuhvb h3{
+    color: white;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fuhvb p{
+    margin-top: 0px;
+    color: white;
+}
+.oppa{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    background-image: linear-gradient(-180deg,rgba(0,0,0,0.00) 12%,#000 97%);
+}
+#cdsfc{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+.ummsx{
+    width: 49.5%;
+    height: 290px;
+    position: relative;
+}
+.ummsx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#zdcvs{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#zdcvs h3{
+    margin: 0;
+    margin-top: 3px;
+    color: rgb(83, 81, 81);
+}
+#zdcvs h3+p{
+    margin: 0;
+    margin-top: 3px;
+    color: rgb(31, 30, 30);
+}
+#zdcvs p+p{
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.iug{
+    display: flex;
+    margin-top: 0px;
+    
+}
+.iug p{
+    margin-right: 10px;
+}
+.iug p:nth-child(1){
+    background-color: blue;
+    padding: 4px;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+}
+.iug p:nth-child(3){
+    color: rgb(153, 149, 149);
+}
+.iug p:nth-child(2){
+    color: rgb(32, 31, 31);
+}
+.tdfxnn{
+    width: 24%;
+}
+#zdcvs img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.bnzf{
+    margin-left: 135px;
+    margin-bottom: 15px;
+    color: rgb(37, 36, 36);
+}
+#wefonh{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.oghklnh img{
+    width: 100%;
+  
+}
+.oghklnh h3{
+    margin-bottom: 5px;
+    margin-top: 11px;
+    color: rgb(32, 32, 32);
+}
+.oghklnh div{
+    margin: 0px;
+    color: rgb(160, 154, 154);
+    margin-bottom: 3px;
+}
+.oghklnh{
+    width: 24%;
+    margin-right: 14.5px;
+}
+.ummsx{
+    overflow: hidden;
+    
+}
+.ummsx img{
+    transition: all 1s ease-out;
+}
+.ummsx:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.ateygcb{
+    overflow: hidden;
+    
+}
+.ateygcb img{
+    transition: all 1s ease-out;
+}
+.ateygcb:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}

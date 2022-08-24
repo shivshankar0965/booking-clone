@@ -1,3 +1,29 @@
+#trhef{
+    width: 78.5%;
+    margin: auto;
+    border: 1px solid rgb(175, 173, 173);
+    padding: 30px 15px;
+}
+#trhef div img{
+    width: 1%;
+    height: 100%;
+}
+#uuyu{
+    color: blue;
+}
+#uuyu:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#trhef div:nth-child(1){
+    background-color: rgb(235, 187, 216);
+    height: 7px;
+    
+}
+#trhef div{
+    display: inline;
+    margin-right: 2px;
+}
 #feqpi2{
     display: flex;
     width: 80%;
@@ -7,6 +33,7 @@
     padding: 20px 10px;
     border-radius: 15px;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 #feqpi2 div{
     margin-right: 10px;
@@ -42,7 +69,7 @@
     display: flex;
     justify-content: space-between;
 }
-#wdfgdf div{
+.brng{
     width: 49%;
     position: relative;
 }
@@ -50,18 +77,73 @@
     width: 100%;
     border-radius: 5px;
 }
-
-.doc h1{
-display: inline;
-/* color: #fff; */
-/* position: absolute; */
+.doc{
+position: absolute;
 top: 20px;
 left: 20px;
+width: 50%;
 }
-/* .indian_flag{
-    /* display: flex; */
-    
-/* } */ 
+.opacity{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.452);
+}
+.indian_flag  h1{
+display: inline;
+color: #fff;
+margin-bottom: 5px;
+
+}
+
 .indian_flag img{
-    width: 25%;
+   
+    width: 9%;
+    margin-left: 5px;
 }
+.doc p{
+    margin-top: 4px;
+    color: #fff;
+    text-decoration: black;
+}
+#nwdk{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+.jsdbuid{
+    width: 32%;
+    position: relative;
+    margin-top: 20px;
+    height: 200px;
+}
+.city2{
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+}
+.indian_flag2  h1{
+    display: inline;
+    color: #fff;
+    margin-bottom: 5px;
+    
+    }
+    
+    .indian_flag2 img{
+       
+        width: 13%;
+        margin-left: 5px;
+    }
+    .opacity2{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 250px;
+        background-color: rgba(7, 7, 7, 0.452);
+    }
+ 
