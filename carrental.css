@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+}
+*:focus {
+  outline: none;
+}
+#top_search_container {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.car_search_container {
+  width: 70%;
+  margin: auto;
+  padding: 60px 0;
+}
+.car_search_heading {
+  padding: 2px 0;
+  font-size: 24px;
+}
+.car_search_heading + p {
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.input_radio {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.input_radio > label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.input_radio > label > input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+.input_radio > label {
+  margin-right: 20px;
+}
+.car_search_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  border-radius: 5px;
+  background-color: #febb02;
+  padding: 4px;
+}
+.car_search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 18px;
+}
+.car_search > i {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.car_search > input {
+  width: 100%;
+  border: none;
+  padding: 18px 18px;
+  font-size: 16px;
+}
+.car_search > input:focus {
+  color: #000;
+  outline: none;
+}
+.date_time {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.date_time > i {
+  font-size: 24px;
+  padding-left: 5px;
+}
+.date_time > input {
+  padding: 15px 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.date_time > input:last-child {
+  font-size: 18px;
+}
+#search {
+  border: none;
+  background-color: #0071c2;
+  margin-left: 5px;
+  color: #fff;
+  font-size: 18px;
+  padding: 17px 28px;
+  cursor: pointer;
+}
+#search:hover {
+  background-color: #003580;
+}
+.drive_age_container > i {
+  font-size: 24px;
+  padding: 0 5px;
+}
+.drive_age_container > label > input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+  margin-right: 5px;
+}
+.drive_age_container > label > input[type="text"] {
+  padding: 8px 10px;
+  font-size: 16px;
+  width: 80px;
+  margin-left: 5px;
+}
+.drive_age_container {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/*==-------------covid wrapper------------*/
+
+.covid_wrapper,
+.discount_sign_in {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid #dcdcdc;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.info_icon_box {
+  background-color: #fff0e0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.info_icon_box > i {
+  color: #b37545;
+  font-size: 24px;
+}
+.covid_contents {
+  line-height: 20px;
+}
+.covid_contents > h3,
+.discount_contents > h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.covid_contents > p,
+.discount_contents > p {
+  font-size: 14px;
+}
+.covid_contents > p > a,
+.discount_contents > p > a {
+  color: #003580;
+  text-decoration: none;
+  font-size: 14px;
+}
+.discount_contents > p > a {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
+}
+/*------------ 10% discount wrapper-------------*/
+.discount_sign_in > .discount_10percent_logo > img {
+  width: 50px;
+  margin-right: 20px;
+}
+.discount_sign_in {
+  position: relative;
+}
+.ri-close-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.popular_car_brands {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+.heading {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+}
+/*---------------------swiper css start here--------------*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.brand_slide {
+  border: 1px solid #dcdcdc;
+  padding: 30px 0;
+}
+.swiper-slide img {
+  width: 100px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 20px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: #000;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 65%;
+  width: 35px;
+  height: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 35px;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: -20px;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -20px;
+  left: auto;
+}
+
+/*--------------popular destination cards-------------------*/
+.popular_destination {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+.popular_destination > h1 {
+  font-weight: 600;
+}
+.popular_destination_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.popular_destination_item {
+  border: 1px solid #dcdcdc;
+}
+.popular_destination_item > .popular_destination_poster > img {
+  width: 100%;
+}
+.popular_destination_contents {
+  padding: 15px;
+  line-height: 30px;
+}
+.popular_destination_contents > h3 {
+  font-weight: 700;
+}
+.price_rates > i {
+  font-size: 20px;
+  color: #aaaaaa;
+  align-items: center;
+}
+.popular_destination_contents > p {
+  color: rgb(73, 73, 73);
+}
+.popular_destination_contents > p:last-child > a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.car_services_container {
+  width: 100%;
+  background-color: #f0f7fb;
+}
+.car_services {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.car_services_items {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.service_icon {
+  margin-right: 10px;
+}
+.service_icon > i {
+  font-size: 35px;
+}
+.service_contents > h4 {
+  font-weight: 700;
+}
+.service_contents > p {
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+}
+
+/*--------- faq container------------*/
+
+.faq_container {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+.faq_questions {
+  border: 1px solid #dcdcdc;
+  padding: 0 20px;
+}
+.question_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.question_item {
+  border-bottom: 1px solid #dcdcdc;
+}
+.question_div > h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.question_div > p > i {
+  font-size: 25px;
+}
+.ans_div {
+  line-height: 35px;
+  max-height: 0;
+  overflow: hidden;
+}
+.ans_div > ul {
+  margin-left: 40px;
+  line-height: 25px;
+}
+.ans_div > p,
+.ans_div > ul > li {
+  font-size: 14px;
+}
+.active > p {
+  transform: rotate(180deg);
+}
+
+/*--------------top world location ----------*/
+
+.top_world_location {
+  width: 70%;
+  margin: auto;
+  margin: 30px auto;
+}
+.top_world_location_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.world_location_card {
+  position: relative;
+}
+.world_location_card > img {
+  width: 100%;
+  height: 100%;
+}
+.world_location_contents {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.049),
+    rgba(0, 0, 0, 0.162) 10%,
+    #000
+  );
+}
+.world_location_contents > h4 {
+  font-weight: 700;
+}
+.world_location_contents > p {
+  font-size: 14px;
+}
+.world_location_contents:hover {
+  color: rgb(248, 127, 13);
+}
