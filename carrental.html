@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Cheap car hire: Find best car deals & worldwide locations booking.com
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./carrental.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="nav_container"></div>
+    <div id="top_search_container">
+      <div class="car_search_container">
+        <h3 class="car_search_heading">Car hire for any kind of trip</h3>
+        <p>Compare deals for the biggest car hire companies</p>
+        <div class="input_radio">
+          <label for="same_location">
+            <input id="same_location" name="location" type="radio" checked />
+            Return to same location</label
+          >
+          <label for="different_location">
+            <input id="different_location" name="location" type="radio" />
+            Return to different location</label
+          >
+        </div>
+        <div class="car_search_section">
+          <div class="car_search">
+            <i class="ri-car-line"></i>
+            <input type="text" placeholder="pick-up-location" />
+          </div>
+          <div class="date_time" id="date_btn">
+            <i class="ri-calendar-2-line"></i>
+            <input type="date" />
+            <input type="time" />
+          </div>
+          <div class="date_time" id="date_btn">
+            <i class="ri-calendar-2-line"></i>
+            <input type="date" />
+            <input type="time" />
+          </div>
+          <button id="search">Search</button>
+        </div>
+        <div class="drive_age_container">
+          <label for="driver_age">
+            <input type="checkbox" id="driver_age" /> Driver aged between
+            30-65</label
+          >
+          <i class="ri-information-line"></i>
+          <label style="display: none" class="driver_age_value" for=""
+            >Driver's Age<input type="text" placeholder="Name"
+          /></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="covid_wrapper">
+        <div class="info_icon_box">
+          <i class="ri-information-line"></i>
+        </div>
+        <div class="covid_contents">
+          <h3>
+            Clean cars. Flexible bookings. Socially distant rental counters.
+          </h3>
+          <p>
+            We’re working with our partners to keep you safe and in the driving
+            seat.
+            <a
+              href="https://www.booking.com/cars-covid-19-update.html?label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4Ap_flpgGwAIB0gIkOTA3NzE2ZjgtZTBjNi00YmRkLTk5YjctNTk4MTkwMzc4NWU52AIE4AIB&sid=0e1241b49b71e375ac77857b567d069c&aid=304142"
+              >Learn more</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="discount_sign_in">
+        <div class="discount_10percent_logo">
+          <img
+            src="https://t-cf.bstatic.com/static/img/cars/cars_genius_discount/08e39e81430e2376eeef1c607f4ae513d53408a6.svg"
+            alt=""
+          />
+        </div>
+        <div class="discount_contents">
+          <h3>Sign in to save 10% with Genius</h3>
+          <p>
+            You're eligible for discounts on select car rentals –
+            <a href="">sign in now!</a>
+          </p>
+        </div>
+        <i class="ri-close-line"></i>
+      </div>
+
+      <div class="popular_car_brands">
+        <h1 class="heading">Popular car hire brands</h1>
+        <div #swiperRef="" class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/suppliers/flat/sixt_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/supplier_logos/enterprise_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/supplier_logos/thrifty_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide brand_slide">
+              <img
+                src="https://cdn.rcstatic.com/images/suppliers/flat/sicily_by_car_logo_lrg.gif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="popular_destination">
+        <h1 class="heading">Popular destinations for car hire</h1>
+        <div class="popular_destination_container">
+          <div class="popular_destination_item">
+            <div class="popular_destination_poster">
+              <img
+                src="https://t-cf.bstatic.com/xdata/images/city/360x240/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&o="
+                alt=""
+              />
+            </div>
+            <div class="popular_destination_contents">
+              <h3 class="popular_contents_title">London</h3>
+              <p>Car hire in 75 pick-up locations</p>
+              <p class="price_rates">
+                <i class="ri-roadster-line"></i> From &#8377;3,721.11
+              </p>
+              <p>
+                <a href="#">Search rental cars in London</a>
+              </p>
+            </div>
+          </div>
+          <div class="popular_destination_item">
+            <div class="popular_destination_poster">
+              <img
+                src="https://t-cf.bstatic.com/xdata/images/city/360x240/613088.webp?k=a370ac3fb385fb211b35a79a42b0e968ddb458be37108af476c558bf4cedc1f3&o="
+                alt=""
+              />
+            </div>
+            <div class="popular_destination_contents">
+              <h3 class="popular_contents_title">London</h3>
+              <p>Car hire in 75 pick-up locations</p>
+              <p class="price_rates">
+                <i class="ri-roadster-line"></i> From &#8377;3,721.11
+              </p>
+              <p>
+                <a href="#">Search rental cars in London</a>
+              </p>
+            </div>
+          </div>
+          <div class="popular_destination_item">
+            <div class="popular_destination_poster">
+              <img
+                src="https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
+                alt=""
+              />
+            </div>
+            <div class="popular_destination_contents">
+              <h3 class="popular_contents_title">London</h3>
+              <p>Car hire in 75 pick-up locations</p>
+              <p class="price_rates">
+                <i class="ri-roadster-line"></i> From &#8377;3,721.11
+              </p>
+              <p>
+                <a href="#">Search rental cars in London</a>
+              </p>
+            </div>
+          </div>
+          <div class="popular_destination_item">
+            <div class="popular_destination_poster">
+              <img
+                src="https://t-cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o="
+                alt=""
+              />
+            </div>
+            <div class="popular_destination_contents">
+              <h3 class="popular_contents_title">London</h3>
+              <p>Car hire in 75 pick-up locations</p>
+              <p class="price_rates">
+                <i class="ri-roadster-line"></i> From &#8377;3,721.11
+              </p>
+              <p>
+                <a href="#">Search rental cars in London</a>
+              </p>
+            </div>
+          </div>
+          <div class="popular_destination_item">
+            <div class="popular_destination_poster">
+              <img
+                src="https://t-cf.bstatic.com/xdata/images/city/360x240/645577.webp?k=81d61cb4e120af4d4218386546a117b77ef18dfcf3727d186ec3a1aad60f38fe&o="
+                alt=""
+              />
+            </div>
+            <div class="popular_destination_contents">
+              <h3 class="popular_contents_title">London</h3>
+              <p>Car hire in 75 pick-up locations</p>
+              <p class="price_rates">
+                <i class="ri-roadster-line"></i> From &#8377;3,721.11
+              </p>
+              <p>
+                <a href="#">Search rental cars in London</a>
+              </p>
+            </div>
+          </div>
+          <div class="popular_destination_item">
+            <div class="popular_destination_poster">
+              <img
+                src="https://t-cf.bstatic.com/xdata/images/city/360x240/619965.webp?k=8b2bc851e921e03c4565fe28e4f608c30223227743b3b2cc56c476a5ef04d3da&o="
+                alt=""
+              />
+            </div>
+            <div class="popular_destination_contents">
+              <h3 class="popular_contents_title">London</h3>
+              <p>Car hire in 75 pick-up locations</p>
+              <p class="price_rates">
+                <i class="ri-roadster-line"></i> From &#8377;3,721.11
+              </p>
+              <p>
+                <a href="#">Search rental cars in London</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="car_services_container">
+        <div class="car_services">
+          <div class="car_services_items">
+            <div class="service_icon">
+              <i class="ri-customer-service-line"></i>
+            </div>
+            <div class="service_contents">
+              <h4>24/7 customer service</h4>
+              <p>24/7 customer service</p>
+            </div>
+          </div>
+          <div class="car_services_items">
+            <div class="service_icon">
+              <i class="ri-check-line"></i>
+            </div>
+            <div class="service_contents">
+              <h4>Free cancellation</h4>
+              <p>Available on most cars</p>
+            </div>
+          </div>
+          <div class="car_services_items">
+            <div class="service_icon">
+              <i class="ri-star-line"></i>
+            </div>
+            <div class="service_contents">
+              <h4>3.5+ million reviews</h4>
+              <p>By real, verified customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq_container">
+        <h1 class="heading">Frequently asked questions</h1>
+        <div class="faq_questions">
+          <div class="question_item">
+            <div class="question_div">
+              <h3>What do I need to rent a car?</h3>
+              <p><i class="ri-arrow-down-s-line"></i></p>
+            </div>
+            <div class="ans_div">
+              <p>
+                When you’re booking the car, you just need a debit or credit
+                card.
+              </p>
+              <p>At the rental counter, you’ll need:</p>
+              <ul>
+                <li>Your passport</li>
+                <li>Your voucher</li>
+                <li>Each driver’s driving licence</li>
+                <li>
+                  The main driver’s credit card (some rental companies also
+                  accept debit cards, but most don’t).
+                </li>
+              </ul>
+              <p>
+                Important: Please make sure you check the car’s rental terms as
+                well, as each rental company has its own rules. For example?
+                They might need to see some extra ID. They might not accept
+                certain types of credit card. Or they might not rent to any
+                driver who hasn’t held their driving licence for 36 months or
+                more.
+              </p>
+            </div>
+          </div>
+          <div class="question_item">
+            <div class="question_div">
+              <h3>Am I old enough to rent a car?</h3>
+              <p><i class="ri-arrow-down-s-line"></i></p>
+            </div>
+            <div class="ans_div">
+              <p>
+                Most companies will rent you a car if you’re at least 21 (and
+                some will rent to younger drivers). But if you’re under 25, you
+                might still have to pay a ‘young driver fee’.
+              </p>
+            </div>
+          </div>
+          <div class="question_item">
+            <div class="question_div">
+              <h3>Can I book a car for my partner, friend, colleague, etc?</h3>
+              <p><i class="ri-arrow-down-s-line"></i></p>
+            </div>
+            <div class="ans_div">
+              <p>
+                Of course. Just put their details in the ‘Driver Details’ form
+                when you’re booking the car.
+              </p>
+            </div>
+          </div>
+          <div class="question_item">
+            <div class="question_div">
+              <h3>Any tips on choosing the right car?</h3>
+              <p><i class="ri-arrow-down-s-line"></i></p>
+            </div>
+            <div class="ans_div">
+              <p>At the rental counter, you’ll need:</p>
+              <ul>
+                <li>
+                  Think about where you’re going. An SUV might be great for
+                  cruising down a Texas freeway, but a smaller car’s probably
+                  much easier to drive in Rome.
+                </li>
+                <li>
+                  See what other people think. You’ll find lots of reviews and
+                  ratings on our site, so find out what other customers liked
+                  (and didn’t like) about each rental company.
+                </li>
+                <li>
+                  Don’t forget the gearbox. In some countries, nearly everyone
+                  drives a manual car. In others, automatics are the norm. Make
+                  sure you rent one you can drive!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="question_item">
+            <div class="question_div">
+              <h3>Is the rental price all inclusive?</h3>
+              <p><i class="ri-arrow-down-s-line"></i></p>
+            </div>
+            <div class="ans_div">
+              <p>
+                The price you see includes the car, mandatory cover (e.g. Theft
+                Protection and Collision Damage Waiver) and fees that, if they
+                apply, are usually payable at pick-up (e.g. any one-way fees,
+                airport surcharges or local taxes).
+              </p>
+              <p>
+                It also includes any extras you’ve already added (e.g. GPS or
+                baby seats).
+              </p>
+
+              <p>
+                It doesn’t include any extra cover you buy when you get to the
+                rental counter.
+              </p>
+              <p>Tip: There’s a full price breakdown on the Payment page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top_world_location">
+        <h1 class="heading">Top worldwide locations for car rental</h1>
+        <div class="top_world_location_wrapper">
+          <div class="world_location_card">
+            <img
+              src="https://t-cf.bstatic.com/xdata/images/city/360x240/619644.webp?k=5b21ac6d3d913a54274d6546e60adb2c3c138d661dd1a2bd7b3aed53e9df0b65&o="
+              alt=""
+            />
+            <div class="world_location_contents">
+              <h4>Milan</h4>
+              <p>Car hire from &#8377; 2,144,40 per day</p>
+            </div>
+          </div>
+          <div class="world_location_card">
+            <img
+              src="https://t-cf.bstatic.com/xdata/images/city/360x240/613105.webp?k=1e85cf4dec7b0d5a6327be91c38cf9c1711f9da1a31c4cba736f9cb751443ff1&o="
+              alt=""
+            />
+            <div class="world_location_contents">
+              <h4>Rome</h4>
+              <p>Car hire from &#8377; 2,144,40 per day</p>
+            </div>
+          </div>
+          <div class="world_location_card">
+            <img
+              src="https://t-cf.bstatic.com/xdata/images/city/360x240/968315.webp?k=14d0bad185930ec2663562b999ecf498fb6fcf492c16a4c33228504a15e2d119&o="
+              alt=""
+            />
+            <div class="world_location_contents">
+              <h4>Barcelona</h4>
+              <p>Car hire from &#8377; 2,144,40 per day</p>
+            </div>
+          </div>
+          <div class="world_location_card">
+            <img
+              src="https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
+              alt=""
+            />
+            <div class="world_location_contents">
+              <h4>Madrid</h4>
+              <p>Car hire from &#8377; 2,144,40 per day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="./carrental.js"></script>
