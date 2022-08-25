@@ -32,3 +32,21 @@ for (i = 0; i < len; i++) {
 }
 let questionItem = document.querySelectorAll(".question_item");
 questionItem[questionItem.length - 1].style.borderBottom = "none";
+
+// fetching the data from api
+
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "f5ff8f3b73msh66d41967f11035cp14257djsn62fcad3d29ae",
+    "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
+  },
+};
+
+fetch(
+  "https://booking-com.p.rapidapi.com/v1/car-rental/locations?name=london&locale=en-gb",
+  options
+)
+  .then((response) => response.json())
+  .then((response) => console.log(response))
+  .catch((err) => console.error(err));
