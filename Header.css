@@ -1,0 +1,184 @@
+/* only for home page */
+.top{
+    background-color: rgb(0,53,128);
+}
+
+
+#adline{
+    font-family: 'Oxygen', sans-serif;
+    width: 85%;
+    margin: auto;
+    color: #fff;
+    padding: 5% 0px;
+   
+  }
+
+
+  #adline h1{
+    font-size: 3em;
+    line-height: 0%;
+  }
+
+
+  #adline h2{
+    font-weight: 400;
+    margin: 1em 0em;
+  }
+
+/* only for home page */
+
+
+
+#covid{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    margin-top: 1%;
+    align-items: center;
+    padding:.5em 1.25em;
+    font-size: 14px;
+    border: 1px solid rgba(128, 128, 128, 0.371);
+}
+
+#covid i{
+    margin-right: 1%;
+    background: rgb(255, 228, 224)  ;
+    padding: 10px;
+    color: rgba(151, 10, 10, 0.808);
+}
+
+
+
+/* 
+search bar */
+
+
+
+  
+  
+/* 
+search bar */
+
+#search_container{
+    position: relative;
+    top:-4em;
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: max-content;
+    grid-gap: 4px;
+    border-radius: .25em;
+    width: 85%;
+    margin: 2% auto;
+    background-color: white;
+    border: 5px solid rgb(254,187,2)
+    
+}
+
+
+ 
+
+#search_container>div:first-child{
+font-size: 1.5em;
+background-color: #fff;
+}
+
+
+#search_container>div:first-child>input{
+    outline: none;
+    border: none;
+    margin: 0 1em;
+    font-size: .6em;
+    padding:  1em;
+
+}
+
+
+#search_container>div{
+display: flex;
+align-items: center;
+border-right: 5px solid rgb(254,187,2);
+padding-left: .5em;
+background-color: #fff;
+}
+
+
+#search_container>div:nth-child(2){
+    font-size: small;
+    width: max-content;
+    background-color: #fff;
+
+}
+
+#search_container>div:nth-child(2) input{
+display: flex;
+outline: none;
+border: none;
+}
+
+#search_container>div:nth-child(3){
+  margin: 0%;
+  padding: 0%;
+}
+
+#search_container>div:nth-child(4){
+padding: 0px;
+margin: 0%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  background-color: rgb(0,113,194);  
+}
+
+#search_container #updown{ 
+top: .2em;
+position: relative;
+
+}
+
+#search_checkbox{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:-6em;
+  width: 85%;
+  margin: auto;
+  font-size: .8em;
+} 
+@media all and (min-width:660px) and (max-width:1200px){
+
+    #adline h1{
+        font-size: 2em;
+        margin: 1em 0px;
+      }
+      #adline h2{
+        font-size: 1em;
+        margin: 1em 0px;
+      }
+
+      
+#covid{
+  
+width: 93%;
+}
+
+}
+
+@media all and (min-width:340px) and (max-width:659px){
+
+  #adline h1{
+    font-size: 1em;
+    margin: 1em 0px;
+  }
+  #adline h2{
+    font-size: .5em;
+     margin: 1em 0px;
+  }
+
+  
+#covid{
+
+width: 93%;
+}
+}

@@ -5,205 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
- 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <div id="top">
-
-        <div id="navbar">
-            <div>
-             <h1>Booking.com</h1>
-                <div>
-                    <h3>INR</h3>
-    <img src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png" alt="">
-    <i id="help" class="ri-question-line"></i>
     
-    <a  href="https://join.booking.com/?lang=en-gb&utm_source=topbar&utm_medium=frontend&amp;label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AoiwkpgGwAIB0gIkNzA2YmQ5MmItOWEzYi00ZGE5LWE3MmQtNGMxZmVlYjBmZTY02AIE4AIB&amp;aid=304142">List your property</a>
-    <a class="bcWhite" href="signIn.html">Register</a>
-    <a class="bcWhite" href="signIn.html">Sign in</a>
-    </div>
-            </div>
-            <div>
-         <a href=""><i class="ri-hotel-bed-line"></i>Stays</a>
-         <a href=""><i class="ri-flight-takeoff-line"></i>Flights</a>
-         <a href=""><i class="ri-global-line" ></i>Flight + Hotel</a>
-         <a href=""><i class="ri-car-line"></i>Car rentals</a>
-         <a href=""><i class="ri-baidu-line"></i>Attractions</a>
-         <a href=""><i class="ri-taxi-line"></i>Airport taxis</a>
-            </div>
-        </div>
+    <div id="top">
+  <!-- 
+       navigation bar
+                      -->
+</div>
+    <div class="top">
         <div id="adline">
             <h1>Find your next stay</h1>
             <h2>Search low prices on hotels, homes and much more...</h2>
         </div>
-
-    </div>
+  </div>
 
     
-
 
     <div id="search_container">
         <div>
             <i class="ri-hotel-bed-line"></i>
-            <input type="text" placeholder="Where are you going?" >
+            <input type="text" id="placeS" placeholder="Where are you going?" >
         </div>
-        <div>
+        <div >
             <i class="ri-calendar-2-fill"></i>
-            <input type="text" placeholder="Check-in">
-            <span>-</span>
-            <input type="text" placeholder="Check-out">
-            </div>
-
-       
-        <i class="ri-user-3-fill"></i>
-        <div>2</div>
-        <div> <span>.</span>  adults  </div>
-        <div>0</div>
-        <div><span>.</span> children </div>
-        <div><span>.</span></div>
-        <div> .  room </div>
-        <iconify-icon icon="ri:code-s-fill" width="20" rotate="90deg"></iconify-icon>
-      <button>Search</button>
-          </div>
-        
+            <input type="text" onfocus="this.type='date'" id="checkIn" placeholder="Check-in">
+            <div>-</div>
+            <input type="text" onfocus="this.type='date'" id="checkout" placeholder="Check-out">
         </div>
 
-<div id="covid">
-
-        <i class="fa fa-info-circle" aria-hidden="true"></i>
-    
-   
-        <p>Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="https://www.booking.com/covid-19.html?aid=304142&label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AsHUkpgGwAIB0gIkNmVhMDRmOTItYjVkYi00ZWVkLWI3ZmYtMmQyOWEzMmNhZTVh2AIE4AIB">Learn more</a></p>
-         
+       <div>
+        <i class="ri-user-3-fill"></i>
+        <div>
+            <span id="adults">2</span>
+             adults .
+             <span id="children">0</span>
+             children . 
+             <span id="room">1</span>
+             room
+             <iconify-icon id="updown"  icon="ri:code-s-fill" width="20" rotate="90deg"></iconify-icon>
+        </div> 
+  </div>
+       
+   <div id="search_btn">Search</div>
 </div>
 
+<div id="search_checkbox">
+    <input type="checkbox">
+    <label for="checkbox">I'm travelling for work</label>
+</div>
+      
 
-
-
-
-
-
-
+<div id="covid">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <p>Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="https://www.booking.com/covid-19.html?aid=304142&label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AsHUkpgGwAIB0gIkNmVhMDRmOTItYjVkYi00ZWVkLWI3ZmYtMmQyOWEzMmNhZTVh2AIE4AIB">Learn more</a></p>     
+</div>
 
 <!-- ADD mid part here and remove br tag
 ADD mid part here and remove br tag
 ADD mid part here and remove br tag
 ADD mid part here and remove br tag -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer>
-  <div id="subs">
-    <h1>Save time, save money!</h1>
-    <p>Sign up and we'll send the best deals to you</p>
-    <div>
-        <input type="email" placeholder="Your email">
-        <button>Subscribe</button>
-    </div>
+  <div id="subs"> 
   </div>
 
 
   <div id="footer2">
-
-        <a href="">List your property</a>
-   <hr>
-     <div>
-        <a href="">Mobile version</a>
-        <a href="">Your account</a>
-        <a href="">Make changes to your booking online</a>
-        <a href="">Customer Service help</a>
-        <a href="">Become an affiliate</a>
-        <a href="">Booking.com for Business</a>
-     </div>
-
   </div>
 
 
   <div id="footer3">
-
-    <div>
-        <div>
-            <a href="">Countries</a>
-            <a href="">Regions</a>
-            <a href="">Cities</a>
-            <a href="">Districts</a>
-            <a href="">Airports</a>
-            <a href="">Hotels</a>
-            <a href="">Places of interest</a>
-        </div>
-        <div>
-            <a href="">Homes</a>
-            <a href="">Apartments</a>
-            <a href="">Resorts</a>
-            <a href="">Villas</a>
-            <a href="">Hostels</a>
-            <a href="">B&Bs</a>
-            <a href="">Guest houses</a>
-        </div>
-       <div>
-            <a href="">Unique places to stay</a>
-            <a href="">All destinations</a>
-            <a href="">Discover</a>
-            <a href="">Reviews</a>
-            <a href="">Unpacked: Travel articles</a>
-            <a href="">Travel Communities</a>
-            <a href="">Seasonal and holiday deals</a>
-       </div>
-        <div>
-            <a href="">Car hire</a>
-            <a href="">Flight finder</a>
-            <a href="">Restaurant reservations</a>
-            <a href="">Booking.com for Travel Agents</a>
-        </div>
-        <div>
-            <a href="">Coronavirus (COVID-19) FAQs</a>
-            <a href=""> About Booking.com</a>
-            <a href="">Customer Service help</a>
-            <a href="">Partner help</a>
-            <a href="">Careers</a>         
-            <a href="">Sustainability</a>
-            <a href="">Press centre</a>
-            <a href="">Safety resource centre</a>
-            <a href=""> Investor relations</a>
-            <a href="">Terms & Conditions</a>
-            <a href="">Partner dispute</a>
-            <a href="">How we work</a>
-            <a href="">Privacy & Cookie Statement</a>
-            <a href=""> Corporate contact</a>
-        </div>
-    </div>
-    <h3><b><a href="">Extranet login</a></b></h3>
-    <p>Copyright © 1996–2022 Booking.com™. All rights reserved.</p>
-    <p>
-        Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
   </div>
-<div id="logos_">
-    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png">
-    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png">
-    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png">
-    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png">
-    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png">
-    <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png">
-</div>
 
 </footer>
 <br>
-</html>
 </body>
-<script src="nav&footer.js"></script>
+</html>
+<!--
+     scripts scripts
+                      -->
+<script src="navbar.js" type="module">
+</script>
+<script src="footer.js" type="module">   
+</script>

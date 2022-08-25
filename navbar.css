@@ -1,7 +1,7 @@
 #top{
     background-color: rgb(0,53,128);
-    
 }
+
 
 *{
     font-family: 'Oxygen', sans-serif;
@@ -11,18 +11,17 @@ body{padding: 0%;
     font-family: 'Oxygen', sans-serif;
 }
 #navbar{
-    font-family: 'Oxygen', sans-serif;
-  font-size: .85em;
-    color: #fff;
- margin: auto;
- border: 0px solid red;
- padding-bottom: 20px;
-    width:85%
+font-family: 'Oxygen', sans-serif;
+font-size: .85em;
+color: #fff;
+margin: auto;
+border: 0px solid red;
+padding-bottom: 1.25em;
+width:85%
 }
 #navbar a{
     color: #fff;
-    text-decoration: none;
-   
+    text-decoration: none;  
 }
 .ri-question-line{
   font-size: 2em;
@@ -40,7 +39,7 @@ body{padding: 0%;
     justify-content: space-between;
     align-items: center;
     border:1px solid  #fff;
-    padding: 9px;
+    padding: .6em;
 }
 
 #navbar>:first-child{
@@ -77,13 +76,13 @@ padding:1px 1%;
 #navbar>:last-child>a:first-child{
     border: 1px solid white;
   background-color: rgb(26,74,141);
-    padding: 9px;
-    border-radius: 50px;
+    padding: 9px ;
+    border-radius: 10em;
 }
 #navbar>:last-child a{
     display: flex;
     align-items: center;
-    padding: 9px;
+    padding:9px;
     border-radius: 50px;
     justify-content: space-between;
 }
@@ -97,100 +96,68 @@ padding:1px 1%;
    background-color: rgb(25, 78, 151);
 }
 
+@media all and (min-width:660px) and (max-width:1000px){
+#navbar{
+    width: 95%;
+}
+#navbar>div>div:last-child{
+width: 60%;
+}
+#navbar>div:last-child{
+    width: 100%;
+ 
+}
+.ri-question-line{
+    font-size: 1.5em;
+  
+    }
 
+}
 
-/* only for home page */
-  #adline{
-    font-family: 'Oxygen', sans-serif;
-    width: 85%;
-    margin: auto;
-    color: #fff;
-    padding: 5% 0px;
-   
+@media all and (min-width:100px) and (max-width:669px){
+  #navbar{
+    font-size:.50em ;
+    padding-bottom: .50em;
+    width: 98%;
+  }  
+
+  #navbar>:last-child i{
+  
+    margin: 0 .25em;
+    font-size: 1em;
   }
-  #adline h1{
-    font-size: 3em;
-    line-height: 0%;
-  }
-  #adline h2{
-    font-weight: 400;
-  }
 
-/* only for home page */
-
-#updown{
-    width: max-content;
-
-    display: flex;
-    flex-direction: column;
-  
+#navbar img{
+    width: 1.5em;
+    height: 1.5em;
 }
-#updown i{
-    margin:-5px;   
+  #navbar>:first-child a{
+    font-size: .5em;
+    padding: .5em;
+    border-radius: 2px;
 }
 
-#search{
-  
-    position: relative;
-    top: -2em;
-  
-   
+#navbar>div>div{
+    width:50%;
 }
 
-#search div{
-    display: flex;
-    width: 85%;
-    align-items: center;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 5px;
-}
-#search>:first-child{
-    border: 3px solid rgb(254,187,2);
-}
-#search>div>div ,#search button{
-    /* border: 2px solid rgb(254,187,2); */
-    align-items: center;
-    justify-content: center;
-    margin-right: 1%;
-    
-}
-#search input{
-    outline: none;
-    border: none;
+#navbar>:last-child{
+    width: 90%;
 }
 
-
-#covid{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    margin-top: 1%;
-    align-items: center;
-    padding:10px 20px;
-    font-size: 14px;
-    border: 1px solid rgba(128, 128, 128, 0.371);
+#navbar>:last-child>a:first-child{
+    padding: .5em .5em;
 }
 
-#covid i{
-    margin-right: 1%;
-    background: rgb(255, 228, 224)  ;
-    padding: 10px;
-    color: rgba(151, 10, 10, 0.808);
+#navbar>:last-child>a{
+padding: .5em .5em;
+font-size: .5em;
 }
 
+#navbar>:last-child>:active{
+    border: 1px solid rgba(248, 248, 248, 0.100);
 
+ }
 
-/* 
-search bar */
-
-#search_container,#search_container div{
-    display: flex;
-    width: 85%;
-    margin: 2% auto;
-    align-items: center;
-    
 }
 
-  
-  

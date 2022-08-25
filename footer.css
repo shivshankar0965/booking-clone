@@ -1,8 +1,6 @@
 
 /* footer */
 
-
-
 #subs{
 
     background-color:rgb(0,34,79) ;
@@ -12,7 +10,7 @@
     color: white;
     
     
-    }
+}
     #subs h1{
         font-size: 1.5em;
         font-weight: 300;
@@ -64,14 +62,13 @@
         text-align: center;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
     #footer2>a{
-    
-    
         border: 1px solid white;
        width: max-content;
        margin: 1em auto;
@@ -88,7 +85,7 @@
         width: 85%;
         margin: auto;
         align-items: center;
-       
+       flex-wrap: wrap;
      
     }
     hr{
@@ -96,7 +93,7 @@
     }
     
     #footer2>div a{
-        font-size: .8em;
+       
     color: #fff;
     font-weight: bold;
     margin:10px 1em
@@ -104,7 +101,7 @@
     
     #footer3>div{
     display: flex;
-    width: 85%;
+    width: 82%;
     margin: auto;
     justify-content: space-between;
     padding-top: 1%;
@@ -133,23 +130,160 @@
         font-family: 'Oxygen', sans-serif;
         width: 85%;
         font-size: .75em;
+        color: #1d1d1d;
         margin: 3em auto;
     
     }
-    #footer3 p:last-child{
-     
+    #footer3>:nth-child(4){
+     margin: auto;
         text-align: center;
-        color: rgb(102, 109, 108);
+        color: rgb(48, 48, 48);
         margin: 3em;
     }
     
-    #logos_{
-        width: 70%;
+   div> #logos_{
+        width: 60%;
         margin: auto;
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
     #logos_ img{
     width: 10%;
+    }
+
+
+    @media all and (min-width:660px) and (max-width:1000px){
+        #subs>div{
+            width:max-content;
+            margin: auto
+            }
+
+        #subs button{
+            width: max-content;
+            text-align: center;
+            font-weight: 300;
+    
+     
+        }
+
+        #footer2>:last-child{      
+            width: 90%;              
+        }
+
+        #footer2>div a{
+        margin:10px 1em;
+        font-size: .6em
+        }
+
+        #footer3>div{
+            width: 87%;
+            margin: auto;
+            justify-content: space-between;
+            padding: 1%; 
+            }
+
+
+    }
+
+    @media all and (min-width:400px) and (max-width:659px){
+        #subs h1{
+            width: max-content;
+
+        }
+
+        #subs p{
+            width: max-content;
+
+        }
+
+        #subs>div{
+            width: max-content;
+
+            }
+        #subs input{
+            width: max-content;
+
+        }
+
+        #subs button{
+            width: max-content;
+
+        }
+
+        #footer2>:last-child{      
+            width: max-content;
+          
+        }
+
+        #footer2>div a{
+        margin:10px 1em;
+        font-size: .6em
+        }
+
+        #footer3>div{
+            width: 87%;
+            margin: auto;
+            justify-content: space-between;
+            padding: 1%; 
+            }
+
+
+    }
+
+
+    
+    @media all and (min-width:240px) and (max-width:400px){
+   
+        #subs h1{
+            width: max-content;
+            font-size: .5em;
+           margin: 1px;
+            width: 100%;
+            padding: 0px;
+            line-height: 1em;
+         
+        }
+
+        #subs p{
+            font-size: .3em;
+            width: 100%;
+        
+           width: max-content;
+        }
+
+        #subs>div{
+            width:90% ;
+            margin: auto
+            }
+        #subs input{
+            font-size:.5em;
+            width: max-content;
+           
+        }
+
+        #subs button{
+            width: max-content;
+            font-size: .5em;
+        }
+     
+
+        #footer2>:last-child{      
+            width: 90%;              
+        }
+
+        #footer2>div a{
+        margin:2px .5em;
+        font-size: .6em
+        }
+
+        #footer3>div{
+            width: 87%;
+            margin: auto;
+            justify-content: space-between;
+            padding: 1%; 
+            }
+
+
     }
