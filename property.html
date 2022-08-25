@@ -23,6 +23,10 @@
             background-color: rgb(255, 166, 0);
             padding: 4%;
         }
+        #one div{
+            padding: 0;
+            margin-top: -05px;
+        }
         #one p{
             margin-bottom: 5px;
         }
@@ -60,12 +64,10 @@
         #hotel img{
             width: 80%;
             height: 250px;
-            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
             border-radius: 5px;
         }
         #hotel{
             display: grid;
-            /* grid-template-columns: 90%; */
             row-gap: 30px;
             width: 85%;
         }
@@ -75,6 +77,30 @@
             gap: 5px;
             border: 1px solid gray;
             padding: 2%;
+        }
+        #hotel>div>div:last-child{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 5px;
+        }
+        .price{
+            font-size: 20px;
+            color: rgb(16, 121, 6);
+        }
+        .city{
+            font-size: 10px;
+            text-decoration: underline;
+            color: blue;
+        }
+        .review{
+            text-decoration: underline;
+            font-family: cursive;
+            color: rgb(13, 41, 196);
+        }
+        #container{
+            position: absolute;
+            width: 300px;
+            height: 200px;
         }
         @media screen and (max-width:1080px) {
             #first{
@@ -87,6 +113,9 @@
                 font-size: 13px;
                 grid-template-columns: 50% 50%;
             }
+            #hotel>div{
+                grid-template-columns: 50% 50%;
+            }
         }
     </style>
 </head>
@@ -96,7 +125,8 @@
             <div id="one">
                 <h1>Search</h1>
                 <p>Destination/property name:</p>
-                <input type="text" placeholder="City Name" id="">
+                <input oninput="getLocation()" type="text" placeholder="City Name" id="city_name">
+                <div id="container"></div>
                 <p>Check-in date</p>
                 <input type="date" placeholder="Check in Date" id="">
                 <p>Check-out date</p>
@@ -106,7 +136,7 @@
                 <span><input type="checkbox"></span>
                 <span>I'm travelling for work</span>
                 <br>
-                <button>Search</button>
+                <button onclick="searchRes()">Search</button>
             </div>
             <div id="two">
                 <h2>Filter by:</h2>
@@ -253,23 +283,55 @@
 </body>
 </html>
 <script>
-    let data=JSON.parse(localStorage.getItem('co-ordinates'));
-    console.log(data);
-
+    
     const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '191cfb01c9mshabc871ac0ebaa17p1b1493jsn024c4f6cba86',
+		'X-RapidAPI-Key': '293fcda454msh923b527ff9d7033p1c8c32jsn39fba2b26563',
 		'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
 	}
 };
 
-fetch('https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates?order_by=popularity&adults_number=2&units=metric&room_number=1&checkout_date=2022-10-01&filter_by_currency=AED&locale=en-gb&checkin_date=2022-09-30&latitude=25.60957&longitude=85.12382&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true', options)
+
+
+let getLocation=()=>{
+    let city_name=document.getElementById("city_name").value;
+    fetch(`https://booking-com.p.rapidapi.com/v1/hotels/locations?locale=en-gb&name=${city_name}`, options)
+	.then(function(res){
+        return res.json();
+    }).then(function(res){
+        let data=res;
+            document.getElementById('container').innerHTML="";
+            data.forEach((ele)=>{
+                let div=document.createElement('div');
+                div.onclick=function(){
+                    let obj={
+                        latitide:ele.latitude,
+                        longitude:ele.longitude
+                    };
+                    document.getElementById("city_name").value=ele.label
+                    document.getElementById('container').innerHTML="";
+                    localStorage.setItem('co-ordinates',JSON.stringify(obj));
+                }
+                div.style.backgroundColor="white"
+                let name=document.createElement('h3');
+                name.innerText=ele.name;
+                let city_details=document.createElement('p');
+                city_details.innerText=ele.city_name+","+ele.region+","+ele.country
+                div.append(name,city_details);
+                document.getElementById('container').append(div);
+            })
+    })
+}
+
+function fetchHotel(latitude,longitude){
+    fetch(`https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates?order_by=popularity&adults_number=2&units=metric&room_number=1&checkout_date=2022-10-01&filter_by_currency=AED&locale=en-gb&checkin_date=2022-09-30&latitude=${latitude}&longitude=${longitude}&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true`, options)
 .then(function(res){
    return res.json();
 }).then(function(res){
     let data=res.result
     console.log(data)
+    document.getElementById('hotel').innerHTML="";
     data.forEach((ele)=>{
         let div=document.createElement('div');
         let div1=document.createElement('div');
@@ -279,15 +341,32 @@ fetch('https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates?order_
         let div2=document.createElement('div');
         let hotel_name=document.createElement('h2');
         hotel_name.innerText=ele.hotel_name;
+        hotel_name.style.color='blue'
         let price=document.createElement('p');
         price.innerText="Rs "+ele.price_breakdown.gross_price;
+        price.setAttribute('class','price');
         let city_name=document.createElement('p');
         city_name.innerText=ele.city;
-        let review_score_word=document.createElement('p');
-        review_score_word="Review: "+ele.review_score_word+" "+ ele.review_score;
-        div2.append(hotel_name,price,city_name,review_score_word);
+        city_name.setAttribute('class','city');
+        let review_score=document.createElement('p');
+        review_score.innerText="Review Score: "+ele.review_score+` (${ele.review_score_word})`;
+        review_score.setAttribute('class','review');
+        let address=document.createElement('p');
+        address.innerText=ele.address;
+        let type=document.createElement('p');
+        type.innerText="Type: "+ele.accommodation_type_name;
+        div2.append(hotel_name,price,city_name,review_score,type,address);
         div.append(div1,div2);
         document.getElementById('hotel').append(div);
     })
 })
+}
+
+function searchRes(){
+    let data=JSON.parse(localStorage.getItem('co-ordinates'));
+    console.log(data)
+    let lati=data.latitide;
+    let longi=data.longitude;
+    fetchHotel(lati,longi)
+}
 </script>
