@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+*:focus {
+  outline: none;
+}
+.covid_prevention_container {
+  width: 100%;
+  background-color: #fefbf0;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+.covid_prevention_wrapper {
+  width: 70%;
+  margin: auto;
+  padding: 5px 20px;
+}
+.covid_prevention_left {
+  display: flex;
+  align-items: center;
+}
+.covid_prevention_left > i {
+  font-size: 30px;
+  color: rgb(173, 93, 42);
+  margin-right: 10px;
+}
+.covid_prevention_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.covid_prevention_right > i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.covid_prevention {
+  cursor: pointer;
+  padding: 10px 0;
+}
+.covid_prevention {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.covid_prevention_contents {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 14px;
+  color: rgb(59, 59, 59);
+}
+.covid_prevention_contents > p {
+  margin-bottom: 30px;
+}
+.covid_prevention_contents > a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 700;
+}
+.active > .covid_prevention_right {
+  transform: rotate(180deg);
+}
+
+/*--------------------search for  airport taxis stying start here----------------*/
+
+/*  */
+
+.airport_taxis_search_container {
+  width: 100%;
+  background: #f5f5f5;
+}
+.airport_taxis_search {
+  width: 70%;
+  margin: auto;
+  padding-top: 40px;
+}
+.heading {
+  color: rgb(43, 43, 43);
+}
+.sub_heading {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #666;
+  font-weight: 100;
+}
+.one_way_return {
+  margin: 30px 0;
+}
+.one_way_return > label > input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+.one_way_return > label {
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.search_container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  border-radius: 5px;
+  background-color: #febb02;
+  padding: 4px;
+}
+.p-col {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background-color: #fff;
+  margin: 0 5px;
+  width: auto;
+}
+.p-col > i {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #666;
+}
+.p-col > input,
+.p-col > select {
+  border: none;
+  padding: 15px 5px;
+  background-color: transparent;
+}
+.pick_up_location,
+.return_location {
+  width: 25%;
+}
+.search_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+#search_btn {
+  padding: 14px 24px;
+  color: #fff;
+  background-color: #0077cc;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+#search_btn:hover {
+  background-color: #00518b;
+}
+.some_services {
+  width: 100%;
+  display: flex;
+  margin-top: 150px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.services_items {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.service_icon {
+  padding: 13px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.service_icon > i {
+  font-size: 30px;
+}
+.service_contents > h4 {
+  padding-bottom: 8px;
+}
+.service_contents > p {
+  font-size: 14px;
+}
+.bg1 {
+  background-color: #e7fde9;
+}
+.bg2 {
+  background-color: #fff0e0;
+}
+.bg3 {
+  background-color: #ebf3ff;
+}
+
+/*-----------------------------airport transport section----------------*/
+
+.airport_transfer_container {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.airport_transfer_container > h1 {
+  text-align: center;
+}
+.airport_transfer_wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.airport_transfer_left {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+.transer_items {
+  display: flex;
+  align-items: center;
+}
+.trnsfer_logo {
+  padding-right: 20px;
+}
+.airport_transfer_left {
+  margin-right: 60px;
+}
+.airport_transfer_contents {
+  padding-right: 30px;
+}
+.airport_transfer_contents > h3 {
+  padding-bottom: 20px;
+}
+.airport_transfer_contents > p {
+  font-size: 14px;
+  color: #666;
+}
+
+.airport_transfer_right {
+  position: relative;
+}
+/* .tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+.tags > p:nth-child(1) {
+  position: absolute;
+  top: -29px;
+  left: -40px;
+  font-size: 14px;
+  padding: 10px 7px;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+}
+.tags > p:nth-child(2),
+.tags > p:nth-child(3),
+.tags > p:nth-child(4),
+.tags > p:nth-child(5),
+.tags > p:nth-child(6) {
+  position: absolute;
+  top: -29px;
+  left: -40px;
+  font-size: 14px;
+}
+
+.tags > p:nth-child(2) {
+  top: 139px;
+  left: 100px;
+}
+.tags > p:nth-child(3) {
+  top: 138px;
+  left: 235px;
+}
+.tags > p:nth-child(4) {
+  top: 300px;
+  left: 58px;
+}
+.tags > p:nth-child(5) {
+  top: 298px;
+  left: 248px;
+}
+.tags > p:nth-child(6) {
+  top: 402px;
+  left: -26px;
+}
+.tags > p:nth-child(1)::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 34px;
+  left: 44px;
+  border-left: 3px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 16px solid #e6e6e6;
+}
