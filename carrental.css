@@ -248,6 +248,7 @@
   width: 35px;
   height: 35px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
   border-radius: 35px;
   z-index: 100;
   cursor: pointer;

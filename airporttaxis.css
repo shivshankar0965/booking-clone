@@ -284,3 +284,150 @@
   border-right: 8px solid transparent;
   border-top: 16px solid #e6e6e6;
 }
+
+/*-----------------Air port taxis---------*/
+
+.airport_taxis_search_container {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 30px 0;
+}
+.airport_taxis_wrapper {
+  width: 70%;
+  margin: auto;
+}
+.airport_taxis_wrapper > .heading {
+  text-align: center;
+}
+.btns_table_tab {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.btns_table_tab > li {
+  border: 1px solid #0077cc;
+  height: 100%;
+  list-style-type: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: #0077cc;
+  font-size: 14px;
+  background-color: #fff;
+}
+.btns_table_tab > li:not(.active2):hover {
+  background-color: #0077cc2e;
+}
+.btns_table_tab > .active2 {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.tabs_result_container {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 20px;
+}
+.tab_divs {
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+}
+.tab_divs_heading {
+  line-height: 25px;
+}
+.tab_divs_heading > p {
+  font-size: 14px;
+  color: #666;
+}
+.tab_divs_contents {
+  padding-left: 10px;
+  line-height: 30px;
+}
+.tab_divs_contents p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(32, 32, 32);
+}
+.tab_divs_contents > p > i {
+  font-size: 24px;
+  padding-right: 10px;
+}
+.tab_divs_contents > p:nth-child(3) {
+  color: #0077cc;
+}
+.tab_divs_contents > p:nth-child(4) {
+  color: green;
+}
+.passangers_btns {
+  border: none;
+  padding: 10px 18px;
+  background-color: #0077cc;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*--------------------services faq -----------------*/
+.taxi_service_faq {
+  width: 70%;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.taxi_service_faq_left {
+  background-color: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  border-right: none;
+  padding: 20px;
+  line-height: 30px;
+}
+.taxi_service_faq_left > p {
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.taxi_service_faq_left > p > a {
+  font-weight: 700;
+  color: #0077cc;
+}
+.taxi_service_faq_right {
+  border: 1px solid #dcdcdc;
+  padding: 0 20px;
+}
+.question_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.question_item {
+  border-bottom: 1px solid #dcdcdc;
+}
+.question_div > h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.question_div > p > i {
+  font-size: 25px;
+}
+.ans_div {
+  line-height: 35px;
+  max-height: 0;
+  overflow: hidden;
+}
+.ans_div > ul {
+  margin-left: 40px;
+  line-height: 25px;
+}
+.ans_div > p,
+.ans_div > ul > li {
+  font-size: 14px;
+}
+.active3 > p {
+  transform: rotate(180deg);
+}
