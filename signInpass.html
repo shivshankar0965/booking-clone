@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        #error1,#error2{
+            color:rgb(216,64,64) ;
+            margin-bottom: 10px;
+        }
+        body{
+   margin: 0%;
+   padding: 0%;
+}
+
+*{
+   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+}
+#navbar{
+   background-color:rgb(0,53,128) ;
+}
+       nav {
+           color: white;
+           display: flex;
+          width: 80%;
+          margin: auto;
+          justify-content: space-between;
+           align-items: center;
+       }
+       nav div{
+           width: 10%;
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           justify-self:flex-end;
+
+       }
+       nav img{
+         border-radius: 50%;
+         width: 1.5em;
+       }
+       nav i{
+           font-size: 1.5em;
+          
+       }
+#container{
+    width: 375px; 
+    border: 0px solid red;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+#container h2{
+ margin-bottom: 0%;
+}
+
+#container h2,#container h2+p,#container label{
+    color: rgb(56,56,56);
+}
+
+#container h2+p{
+    font-size:.9em;
+}
+#container label{
+    font-size: .8em;
+    line-height: 2em;
+   
+}
+#container .password{
+    border: 1px solid rgb(189,189,189);
+    display: flex;
+    margin: 3% 1px;
+    align-items: center;
+    justify-content: space-between;
+}
+#container i{
+   font-size: 17px;
+   padding: 10px;
+ 
+}
+#container i:hover{
+    background-color: rgba(179, 173, 165, 0.562);
+}
+#container input{
+    width: 90%;
+    height: 36px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+#container button{
+    font-size: 1em;
+    color: white;
+    background-color: rgb(0,113,194);
+    border: none;
+    height: 48px;
+    margin: 10px 0px;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 10% auto;
+    color: rgb(0,113,194);
+}
+
+
+#terms{
+    width: 400px; 
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#terms>:first-child{
+    padding: 1.5em 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.123);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+#terms a{
+    text-decoration: none;
+    color:rgb(0,113,194);
+}
+#container #button2{    
+    border: 1px solid rgb(0,113,194);
+    color: rgb(0,113,194);
+ font-weight: 500;
+    background-color: transparent;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <nav >
+            <h3>Booking.com</h3>
+           <div>
+               <div><img src="https://q-xx.bstatic.com/backend_static/common/flags/new/48-squared/in.png" alt=""></div>
+               <div>
+                <i id="help" class="ri-question-line"></i>
+               </div>
+           </div>
+           </nav>
+    </div>
+
+      <div id="container">
+
+        <h2>Enter your password</h2>
+        <p>Please enter your Booking.com password for <br><b id="emailspace">sdf</b></p>
+
+        <label for="password">Password</label>
+        <div class="password" > 
+                <input type="password" id="password">
+                <i class="ri-eye-line"></i>
+        </div>
+        <div id="error4"></div>
+        <button onclick="checkLogin()">Sign in</button>
+        <hr width="20%">
+        <button id="button2">Sign in with a verification link</button> 
+       <a href="">forget your password?</a>
+   
+     </div>
+        <div id="terms">
+           <p> By signing in or creating an account, you agree with our <a href="">Terms & conditions</a> and <a href="">Privacy</a> statement  </p>
+        
+     <p>All rights reserved. <br> Copyright (2006 - 2022) - Booking.com™</p>
+
+     </div>
+      </div>
+</body>
+</html>
+<script src="./signin.js"></script>

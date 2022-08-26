@@ -1,5 +1,7 @@
+
 #top{
     background-color: rgb(0,53,128);
+    width: 100%;
 }
 
 
@@ -8,6 +10,7 @@
 }
 body{padding: 0%;
     margin: 0%;
+    width: max-content;
     font-family: 'Oxygen', sans-serif;
 }
 #navbar{
@@ -17,7 +20,7 @@ color: #fff;
 margin: auto;
 border: 0px solid red;
 padding-bottom: 1.25em;
-width:85%
+width:185%
 }
 #navbar a{
     color: #fff;
@@ -52,6 +55,12 @@ padding:1px 1%;
     width: 40%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#navbar>div>div>div{
+    width: 39%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 #navbar img{
@@ -114,44 +123,39 @@ width: 60%;
 
 }
 
-@media all and (min-width:100px) and (max-width:669px){
+@media all and (min-width:480px) and (max-width:669px){
+ #navbar h1{
+margin: 5px;
+ }
   #navbar{
-    font-size:.50em ;
-    padding-bottom: .50em;
-    width: 98%;
+    width: 95vw
   }  
-
-  #navbar>:last-child i{
-  
-    margin: 0 .25em;
-    font-size: 1em;
-  }
-
 #navbar img{
     width: 1.5em;
     height: 1.5em;
 }
   #navbar>:first-child a{
-    font-size: .5em;
-    padding: .5em;
+    font-size: .7em;
+    margin: 1px;
     border-radius: 2px;
 }
 
 #navbar>div>div{
-    width:50%;
+    width:60%;
 }
 
 #navbar>:last-child{
-    width: 90%;
+    width: 95%;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
-#navbar>:last-child>a:first-child{
-    padding: .5em .5em;
-}
+
 
 #navbar>:last-child>a{
-padding: .5em .5em;
-font-size: .5em;
+font-size: 1em;
+width: max-content;
+
 }
 
 #navbar>:last-child>:active{
