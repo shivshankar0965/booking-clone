@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400,700,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,8 +29,9 @@
         Sign in or create an account
      </h2>
         <label for="email">Email address</label>
-     <input type="email">
-  <button>Continue with email</button>
+     <input type="email" id="email">
+     <div id="error"></div>
+  <button onclick="loginFunc()">Continue with email</button>
 
   <p>or use one of these options</p>
   <div id="smlogin">
@@ -52,3 +54,4 @@
    </div>
 </body>
 </html>
+<script src="./signin.js"></script>
