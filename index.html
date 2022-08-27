@@ -6,15 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="stylesheet" href="./navbar.css"/> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="explore.css" />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./swiper.css" />
+    <link rel="stylesheet" href="./swiper2.css" />
+    <link rel="stylesheet" href="footer.css">
+  
+<style>
+  
+#top{
+    background-color: rgb(0,53,128);
+    width: 100%;
+}
+
+
+*{
+    font-family: 'Oxygen', sans-serif;
+}
+/* body{padding: 0%; */
+    /* margin: 0%;
+    width: max-content;
+    font-family: 'Oxygen', sans-serif;
+} */
+#navbar{
+font-family: 'Oxygen', sans-serif;
+font-size: .85em;
+color: #fff;
+margin: auto;
+border: 0px solid red;
+padding-bottom: 1.25em;
+width:80%
+}
+#navbar a{
+    color: #fff;
+    text-decoration: none;  
+}
+.ri-question-line{
+  font-size: 2em;
+
+  }
+
+  #navbar>:last-child i{
+  
+    margin: 0 5px;
+    font-size: 1.3em;
+  }
+ 
+#navbar>:first-child a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid  #fff;
+    padding: .6em;
+}
+
+#navbar>:first-child{
+display: flex;
+justify-content: space-between;
+padding:1px 1%;
+
+}
+#navbar>div>div{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar>div>div>div{
+    width: 39%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navbar img{
+    border-radius: 50%;
+    height: 35%;
+  
+}
+
+#navbar .bcWhite{
+    color: rgb(0,113,194);
+    font-weight:600;
+    background-color: #fff;
+ 
+}
+
+#navbar>:last-child{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar>:last-child>a:first-child{
+    border: 1px solid white;
+  background-color: rgb(26,74,141);
+    padding: 9px ;
+    border-radius: 10em;
+}
+#navbar>:last-child a{
+    display: flex;
+    align-items: center;
+    padding:9px;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+
+#navbar>:last-child>:hover{
+ background-color: rgb(26,74,141);
+ 
+}
+#navbar>:last-child>:active{
+   border: 2px solid rgba(248, 248, 248, 0.100);
+   background-color: rgb(25, 78, 151);
+}
+
+@media all and (min-width:660px) and (max-width:1000px){
+#navbar{
+    width: 95%;
+}
+#navbar>div>div:last-child{
+width: 60%;
+}
+#navbar>div:last-child{
+    width: 100%;
+ 
+}
+.ri-question-line{
+    font-size: 1.5em;
+  
+    }
+
+}
+
+@media all and (min-width:480px) and (max-width:669px){
+ #navbar h1{
+margin: 5px;
+ }
+  #navbar{
+    width: 95vw
+  }  
+#navbar img{
+    width: 1.5em;
+    height: 1.5em;
+}
+  #navbar>:first-child a{
+    font-size: .7em;
+    margin: 1px;
+    border-radius: 2px;
+}
+
+#navbar>div>div{
+    width:60%;
+}
+
+#navbar>:last-child{
+    width: 95%;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+
+
+#navbar>:last-child>a{
+font-size: 1em;
+width: max-content;
+
+}
+
+#navbar>:last-child>:active{
+    border: 1px solid rgba(248, 248, 248, 0.100);
+
+ }
+
+}
+
+
+</style>
   </head>
   <body>
+
+    <div id="top">
+      <div id="navbar">
+        <div>
+         <h1>Booking.com</h1>
+            <div>
+                <h3>INR</h3>
+    <img src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png" alt="">
+    <i id="help" class="ri-question-line"></i>
+    
+    <a  href="https://join.booking.com/?lang=en-gb&utm_source=topbar&utm_medium=frontend&amp;label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AoiwkpgGwAIB0gIkNzA2YmQ5MmItOWEzYi00ZGE5LWE3MmQtNGMxZmVlYjBmZTY02AIE4AIB&amp;aid=304142">List your property</a>
+    
+    <div id="dp">
+    <a class="bcWhite"  href="signIn.html">Register</a>
+    <a class="bcWhite"  href="signIn.html">Sign in</a>
+    </div>
+    
+    </div>
+        </div>
+        <div>
+     <a href="#"><i class="ri-hotel-bed-line"></i>Stays</a>
+     <a href="flight.html"><i class="ri-flight-takeoff-line"></i>Flights</a>
+     <a href="#"><i class="ri-global-line" ></i>Flight + Hotel</a>
+     <a href="carrental.html"><i class="ri-car-line"></i>Car rentals</a>
+     <a href="./Attraction/attraction.html"><i class="ri-baidu-line"></i>Attractions</a>
+     <a href="airporttaxis.html"><i class="ri-taxi-line"></i>Airport taxis</a>
+        </div>
+    </div>
+    </div>
     <div id="feqpi2">
       <div>
         <img
@@ -32,9 +234,9 @@
       </div>
     </div>
     <!-----Swiper first----->
+    <h2 class="psodof">Explore India</h2>
+      <p class="psodof">These popular destinations have a lot to offer</p>
     <div id="explore_properties">
-      <h2>Explore India</h2>
-      <p>These popular destinations have a lot to offer</p>
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper"></div>
         <div class="swiper-button-next"></div>
@@ -139,8 +341,9 @@
       </div>
     </div>
     <!-----Swiper first----->
+    <h2 class="psodof">Browse by property type</h2>
     <div id="explore_by_properties">
-      <h2>Browse by property type</h2>
+      
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper"></div>
         <div class="swiper-button-next"></div>
@@ -356,8 +559,21 @@
       </div>
     </div>
   </body>
+  <footer>
+    <div id='subs'></div>
+    <div id='footer2'></div>
+    <div id='footer3'></div>
+  </footer>
 </html>
 
 <!-- Initialize Swiper -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="swiper.js"></script>
+<!-- <script type="module">
+  import navfunc from'./components/navbarC.js'
+  // console.log(navfunc)
+  document.getElementById("top").innerHTML=navfunc()
+  
+</script> -->
+<script type="module" src="navbar.js"></script>
+<script type="module" src="footer.js"></script>
