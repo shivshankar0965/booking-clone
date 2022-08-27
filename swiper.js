@@ -294,7 +294,9 @@ function appendSwipper1(data1) {
       .append(swiper_slider);
   });
 }
+/*-------------------swiper 3 from filght page-----------------*/
 
-window.addEventListener("DOMContentLoaded", (event) => {});
-appendSwipper2(property_type);
-appendSwipper1(explore_india);
+window.addEventListener("DOMContentLoaded", (event) => {
+  appendSwipper2(property_type);
+  appendSwipper1(explore_india);
+});
