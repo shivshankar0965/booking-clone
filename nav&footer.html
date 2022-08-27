@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="Header.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,7 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    
+     <div id="top">
+        
+    </div>
  
     <div class="top">
         <div id="adline">
@@ -37,14 +38,15 @@
             <i class="ri-hotel-bed-line"></i>
             <input type="text" id="placeS" placeholder="Where are you going?" >
         </div>
-        <div >
+
+        <div>
             <i class="ri-calendar-2-fill"></i>
             <input type="text" onfocus="this.type='date'" id="checkIn" placeholder="Check-in">
             <div>-</div>
             <input type="text" onfocus="this.type='date'" id="checkout" placeholder="Check-out">
         </div>
 
-       <div>
+        <div>
         <i class="ri-user-3-fill"></i>
         <div>
             <span id="adults">2</span>
@@ -55,9 +57,12 @@
              room
              <iconify-icon id="updown"  icon="ri:code-s-fill" width="20" rotate="90deg"></iconify-icon>
         </div> 
-  </div>
-       
-   <div ><button id="search_btn">Search</button></div>
+        </div>  
+
+        <div>
+             <button id="search_btn">Search</button>
+        </div>
+
 </div>
 
 <div id="search_checkbox">
@@ -99,4 +104,3 @@ ADD mid part here and remove br tag -->
 </script>
 <script src="footer.js" type="module">   
 </script>
-<script src="./signin.js" type="module"></script>

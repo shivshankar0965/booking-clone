@@ -1,6 +1,9 @@
 
 /* footer */
-
+body{
+    width: 100%;
+  }
+  
 #subs{
 
     background-color:rgb(0,34,79) ;
@@ -188,18 +191,24 @@
     }
 
     @media all and (min-width:400px) and (max-width:659px){
+      #subs{
+        line-height: 30px;
+      }
         #subs h1{
-            width: max-content;
+        width: max-content;
+       margin: auto;
 
         }
 
         #subs p{
             width: max-content;
-
+            margin: auto;
+    
         }
 
         #subs>div{
             width: max-content;
+       
 
             }
         #subs input{
@@ -235,27 +244,29 @@
 
     
     @media all and (min-width:240px) and (max-width:400px){
-   
+   #subs{
+    line-height: 30px;
+   }
         #subs h1{
             width: max-content;
-            font-size: .5em;
-           margin: 1px;
+            font-size: .1.5em;
+           margin: auto;
             width: 100%;
             padding: 0px;
-            line-height: 1em;
+          
          
         }
 
         #subs p{
-            font-size: .3em;
+            font-size: 1em;
             width: 100%;
-        
+            margin: auto;
            width: max-content;
         }
 
         #subs>div{
-            width:90% ;
-            margin: auto
+            width:100% ;
+            margin: auto;
             }
         #subs input{
             font-size:.5em;

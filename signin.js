@@ -36,6 +36,7 @@ function createFunc(){
     error1.innerText=""
     error2.innerText=""
     localStorage.setItem("loginData",JSON.stringify(loginData))
+    localStorage.setItem("flag",JSON.stringify(true))
         window.location.href="./nav&footer.html"
    }else{
    error1=document.getElementById("error1")
@@ -76,6 +77,8 @@ if(mypass!=password){
   error4.style.color="rgb(216,64,64)"
 }else{
     error4.innerText=""
+    localStorage.setItem("flag",JSON.stringify(true))
+
     window.location.href="./nav&footer.html"
 }
     
