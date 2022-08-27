@@ -10,7 +10,7 @@
 }
 body{padding: 0%;
     margin: 0%;
-    width: max-content;
+    /* width: max-content; */
     font-family: 'Oxygen', sans-serif;
 }
 #navbar{
