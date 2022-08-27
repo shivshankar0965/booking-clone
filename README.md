@@ -11,10 +11,10 @@ To clone the website name: https://booking.com\
 
 --> Tech Stacks
 
-    <!--  HTML  -->\
-    <!--  CSS  -->\
-    <!--  JavaScript  -->\
-    <!--  Swiper.JS  -->\
+    <!--  HTML  -->
+    <!--  CSS  -->
+    <!--  JavaScript  -->
+    <!--  Swiper.JS  -->
 
 --> Team Members:\
 ++ Shiv Shankar\
