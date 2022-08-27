@@ -294,7 +294,108 @@ function appendSwipper1(data1) {
       .append(swiper_slider);
   });
 }
+/*-------------------swiper 3 from filght page-----------------*/
+let international_popular_flights = [
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/664662.jpg?k=d233ff3beefccce61e2c23f1079e13cded4d74eb74ad01749b18a3e49f56e04a&o=",
+    title: "New Delhi to Kathmandu",
+    desc: "Aug 31 - Sept 7 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/674773.jpg?k=f65fb36a6b12a3f09a07232ef7946deb46871c0d5a308d3e16ff127d61233f41&o=",
+    title: "New Delhi to Male City",
+    desc: "Sept 1 - Sept 8 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/620027.jpg?k=3e415bb694a1a0145529dad3242573d0d52364bc57bae824b5990bf9c2fabc04&o=",
+    title: "New Delhi to Bangkok",
+    desc: "Aug 28 - Sept 4 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/619923.jpg?k=4fb13225390240a51ee5aa1d76318d03dc0de8a046ddc06e4598f17b287bdcc9&o=",
+    title: "New Delhi to Dubai",
+    desc: "Sept 1 - Sept 8 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/654657.jpg?k=89856fe34d0c79585591dfb571c096931beeea442ef9175f86cd9960ffb242dd&o=",
+    title: "New Delhi to Istanbul",
+    desc: "Aug 29 - Sept 5 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/686019.jpg?k=6a598e32da7c3ad489629acee666681c9b8d9096951bcea1c2bc645e87ef260f&o=",
+    title: "New Delhi to Zürich",
+    desc: "Aug 31 - Sept 7 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/613094.jpg?k=f751e035ae2c0ac97263ed7d150bae607ffa17a88c55e81cec907941d6bb078b&o=",
+    title: "New Delhi to London",
+    desc: "Aug 27 - Sept 3 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/856674.jpg?k=70a9589c2f7d2fc175c3ac02c55702c2e433f588866756a394cddfe215170f38&o=",
+    title: "New Delhi to New York",
+    desc: "Aug 28 - Sept 4 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/613087.jpg?k=68ce65e52a527819c35c13c3d0e8a925263a71aab15a89577b4083c021855481&o=",
+    title: "New Delhi to Paris",
+    desc: "Aug 29 - Sept 5 · Round trip",
+  },
+  {
+    image:
+      "https://q-xx.bstatic.com/xdata/images/city/square210/967877.jpg?k=18d14b862ca13e1e099d98c281202acdf8e80bacbf831bd66222ea03392d5d57&o=",
+    title: "New Delhi to Melbourne",
+    desc: "Aug 31 - Sept 7 · Round trip",
+  },
+];
 
-window.addEventListener("DOMContentLoaded", (event) => {});
-appendSwipper2(property_type);
-appendSwipper1(explore_india);
+let swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 4,
+  centeredSlides: false,
+  spaceBetween: 20,
+  //   pagination: {
+  //     el: ".swiper-pagination2",
+  //     type: "fraction",
+  //   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  debugger: true,
+});
+
+function appendSwipper3(data3) {
+  data3.forEach((el) => {
+    let swiper_slider = document.createElement("div");
+    swiper_slider.setAttribute("class", "swiper-slide explore_slide_1");
+    swiper_slider.innerHTML = `
+  
+			  <div>
+			  <img
+			  src="${el.image}"
+			  alt=""
+			  />
+			  <h3>${el.title}</h3>
+			  <p>${el.desc}</p>
+		  </div>
+  
+	  `;
+    document
+      .querySelector(".mySwiper3 > .swiper-wrapper")
+      .append(swiper_slider);
+  });
+}
+window.addEventListener("DOMContentLoaded", (event) => {
+  appendSwipper2(property_type);
+  appendSwipper1(explore_india);
+  appendSwipper3(international_popular_flights);
+});

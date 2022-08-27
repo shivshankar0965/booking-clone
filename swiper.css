@@ -75,7 +75,8 @@ body {
   left: auto;
 }
 .explore_slide_1 > div,
-.explore_slide_2 > div {
+.explore_slide_2 > div,
+.ineternational_popular_flights {
   line-height: 10px;
 }
 .explore_slide_1 > div > img,
@@ -98,7 +99,10 @@ body {
   color: #777;
 }
 
-#explore_by_properties {
+#explore_by_properties,
+#ineternational_popular_flights,
+#trending_popular_flights,
+#domestic_popular_flights {
   width: 80%;
   margin: 30px auto;
   position: relative;
