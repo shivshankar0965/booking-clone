@@ -1,164 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signIn / Register</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://iconape.com/wp-content/files/re/43583/svg/bookingcom-1.svg"
+      type="image/x-icon"
+    />
     <style>
-        #error1,#error2{
-            color:rgb(216,64,64) ;
-            margin-bottom: 10px;
-        }
-        body{
-   margin: 0%;
-   padding: 0%;
-}
+      #error1,
+      #error2 {
+        color: rgb(216, 64, 64);
+        margin-bottom: 10px;
+      }
+      body {
+        margin: 0%;
+        padding: 0%;
+      }
 
-*{
-   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
-}
-#navbar{
-   background-color:rgb(0,53,128) ;
-}
-       nav {
-           color: white;
-           display: flex;
-          width: 80%;
-          margin: auto;
-          justify-content: space-between;
-           align-items: center;
-       }
-       nav div{
-           width: 10%;
-           display: flex;
-           align-items: center;
-           justify-content: space-around;
-           justify-self:flex-end;
+      * {
+        font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+      #navbar {
+        background-color: rgb(0, 53, 128);
+      }
+      nav {
+        color: white;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav div {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        justify-self: flex-end;
+      }
+      nav img {
+        border-radius: 50%;
+        width: 1.5em;
+      }
+      nav i {
+        font-size: 1.5em;
+      }
+      #container {
+        width: 375px;
+        border: 0px solid red;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      #container h2 {
+        margin-bottom: 0%;
+      }
 
-       }
-       nav img{
-         border-radius: 50%;
-         width: 1.5em;
-       }
-       nav i{
-           font-size: 1.5em;
-          
-       }
-#container{
-    width: 375px; 
-    border: 0px solid red;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    
-}
-#container h2{
- margin-bottom: 0%;
-}
+      #container h2,
+      #container h2 + p,
+      #container label {
+        color: rgb(56, 56, 56);
+      }
 
-#container h2,#container h2+p,#container label{
-    color: rgb(56,56,56);
-}
+      #container h2 + p {
+        font-size: 0.9em;
+      }
+      #container label {
+        font-size: 0.8em;
+        line-height: 2em;
+      }
+      #container .password {
+        border: 1px solid rgb(189, 189, 189);
+        display: flex;
+        margin: 3% 1px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #container i {
+        font-size: 17px;
+        padding: 10px;
+      }
+      #container i:hover {
+        background-color: rgba(179, 173, 165, 0.562);
+      }
 
-#container h2+p{
-    font-size:.9em;
-}
-#container label{
-    font-size: .8em;
-    line-height: 2em;
-   
-}
-#container .password{
-    border: 1px solid rgb(189,189,189);
-    display: flex;
-    margin: 3% 1px;
-    align-items: center;
-    justify-content: space-between;
-}
-#container i{
-   font-size: 17px;
-   padding: 10px;
- 
-}
-#container i:hover{
-    background-color: rgba(179, 173, 165, 0.562);
-}
+      #container input {
+        width: 90%;
+        height: 36px;
+        font-size: 1em;
+        outline: none;
+        border: none;
+      }
+      #container button {
+        font-size: 1em;
+        color: white;
+        background-color: rgb(0, 113, 194);
+        border: none;
+        height: 48px;
+        margin: 10px 0px;
+      }
 
-
-#container input{
-    width: 90%;
-    height: 36px;
-    font-size: 1em;
-    outline: none;
-    border: none;
-}
-#container button{
-    font-size: 1em;
-    color: white;
-    background-color: rgb(0,113,194);
-    border: none;
-    height: 48px;
-    margin: 10px 0px;
-}
-
-#terms{
-    font-size: 12px;
-    text-align: center;
-}
-#terms>:first-child{
-    padding: 1.5em 0px;
-    border-top: 1px solid rgba(0, 0, 0, 0.123);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
-}
-#terms a{
-    text-decoration: none;
-    color:rgb(0,113,194);
-}
+      #terms {
+        font-size: 12px;
+        text-align: center;
+      }
+      #terms > :first-child {
+        padding: 1.5em 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.123);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+      }
+      #terms a {
+        text-decoration: none;
+        color: rgb(0, 113, 194);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="navbar">
-        <nav >
-            <h3>Booking.com</h3>
-           <div>
-               <div><img src="https://q-xx.bstatic.com/backend_static/common/flags/new/48-squared/in.png" alt=""></div>
-               <div>
-                <i id="help" class="ri-question-line"></i>
-               </div>
-           </div>
-           </nav>
+      <nav>
+        <h3>Booking.com</h3>
+        <div>
+          <div>
+            <img
+              src="https://q-xx.bstatic.com/backend_static/common/flags/new/48-squared/in.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <i id="help" class="ri-question-line"></i>
+          </div>
+        </div>
+      </nav>
     </div>
 
-      <div id="container">
+    <div id="container">
+      <h2>Create password</h2>
+      <p>
+        Use a minimum of 10 characters, including uppercase letters, lowercase
+        letters and numbers.
+      </p>
 
-        <h2>Create password</h2>
-        <p>Use a minimum of 10 characters, including uppercase letters, lowercase letters and numbers.</p>
-
-        <label for="password">Password</label>
-        <div class="password" > 
-                <input type="password" id="password">
-                <i class="ri-eye-line"></i>
-        </div>
-       <div id="error1"></div>
-        <label for="confirm password">Confirm password</label>
-        <div class="password" >
-            <input type="text" id="confirm">
-            <i class="ri-eye-off-line"></i>
-        </div>
-        <div id="error2"></div>
-        <button onclick="createFunc()">Create account</button>
-
-        <div id="terms">
-           <p> By signing in or creating an account, you agree with our <a href="">Terms & conditions</a> and <a href="">Privacy</a> statement  </p>
-        
-     <p>All rights reserved. <br> Copyright (2006 - 2022) - Booking.com™</p>
-
-     </div>
+      <label for="password">Password</label>
+      <div class="password">
+        <input type="password" id="password" />
+        <i class="ri-eye-line"></i>
       </div>
-</body>
+      <div id="error1"></div>
+      <label for="confirm password">Confirm password</label>
+      <div class="password">
+        <input type="text" id="confirm" />
+        <i class="ri-eye-off-line"></i>
+      </div>
+      <div id="error2"></div>
+      <button onclick="createFunc()">Create account</button>
+
+      <div id="terms">
+        <p>
+          By signing in or creating an account, you agree with our
+          <a href="">Terms & conditions</a> and <a href="">Privacy</a> statement
+        </p>
+
+        <p>
+          All rights reserved. <br />
+          Copyright (2006 - 2022) - Booking.com™
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
-<script src="./signin.js"></script>
+<script src="./scripts/signin.js"></script>

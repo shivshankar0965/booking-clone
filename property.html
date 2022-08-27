@@ -1,372 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Showing Properties by Location</title>
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family:  'Oxygen', sans-serif; ;
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Oxygen", sans-serif;
+      }
+      #first {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        gap: 50px;
+      }
+      #one {
+        background-color: rgb(255, 166, 0);
+        padding: 4%;
+      }
+      #one div {
+        padding: 0;
+        margin-top: -05px;
+      }
+      #one p {
+        margin-bottom: 5px;
+      }
+      #one > input {
+        margin-bottom: 8px;
+        font-size: 18px;
+        padding: 1%;
+        width: 100%;
+      }
+      #one button {
+        display: block;
+        margin: auto;
+        margin-top: 8px;
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        color: whitesmoke;
+        background-color: rgb(48, 48, 250);
+        border: 0;
+      }
+      #two {
+        margin-top: 15px;
+        border: 1px solid rgb(177, 167, 167);
+      }
+      #two h4 {
+        margin-bottom: 8px;
+      }
+      #two hr {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      #two > h2,
+      #two > h4,
+      #two > input,
+      #two > p {
+        margin-left: 8px;
+      }
+      #hotel img {
+        width: 80%;
+        height: 250px;
+        border-radius: 5px;
+      }
+      #hotel {
+        display: grid;
+        row-gap: 30px;
+        width: 85%;
+      }
+      #hotel > div {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 5px;
+        border: 1px solid gray;
+        padding: 2%;
+      }
+      #hotel > div > div:last-child {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+      }
+      .price {
+        font-size: 20px;
+        color: rgb(16, 121, 6);
+      }
+      .city {
+        font-size: 10px;
+        text-decoration: underline;
+        color: blue;
+      }
+      .review {
+        text-decoration: underline;
+        font-family: cursive;
+        color: rgb(13, 41, 196);
+      }
+      #container {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+      }
+      @media screen and (max-width: 1080px) {
+        #first {
+          grid-template-columns: 40% 60%;
         }
-        #first{
-            width: 90%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 20% 80%;
-            gap: 50px;
+        #hotel img {
+          height: 180px;
         }
-        #one{
-            background-color: rgb(255, 166, 0);
-            padding: 4%;
+        #hotel > div h2,
+        p {
+          font-size: 13px;
+          grid-template-columns: 50% 50%;
         }
-        #one div{
-            padding: 0;
-            margin-top: -05px;
+        #hotel > div {
+          grid-template-columns: 50% 50%;
         }
-        #one p{
-            margin-bottom: 5px;
-        }
-        #one>input{
-            margin-bottom: 8px;
-            font-size: 18px;
-            padding: 1%;
-            width: 100%;
-        }
-        #one button{
-            display: block;
-            margin: auto;
-            margin-top: 8px;
-            width: 100%;
-            height: 40px;
-            font-size: 18px;
-            color: whitesmoke;
-            background-color: rgb(48, 48, 250);
-            border: 0;
-        }
-        #two{
-            margin-top: 15px;
-            border: 1px solid rgb(177, 167, 167);
-        }
-        #two h4{
-            margin-bottom: 8px;
-        }
-        #two hr{
-            margin-top: 8px;
-            margin-bottom: 8px;
-        }
-        #two>h2, #two>h4 ,#two>input,#two>p{
-            margin-left: 8px;
-        }
-        #hotel img{
-            width: 80%;
-            height: 250px;
-            border-radius: 5px;
-        }
-        #hotel{
-            display: grid;
-            row-gap: 30px;
-            width: 85%;
-        }
-        #hotel>div{
-            display: grid;
-            grid-template-columns: 30% 70%;
-            gap: 5px;
-            border: 1px solid gray;
-            padding: 2%;
-        }
-        #hotel>div>div:last-child{
-            display: grid;
-            grid-template-columns: 1fr;
-            row-gap: 5px;
-        }
-        .price{
-            font-size: 20px;
-            color: rgb(16, 121, 6);
-        }
-        .city{
-            font-size: 10px;
-            text-decoration: underline;
-            color: blue;
-        }
-        .review{
-            text-decoration: underline;
-            font-family: cursive;
-            color: rgb(13, 41, 196);
-        }
-        #container{
-            position: absolute;
-            width: 300px;
-            height: 200px;
-        }
-        @media screen and (max-width:1080px) {
-            #first{
-                grid-template-columns: 40% 60%;
-            }
-            #hotel img{
-                height: 180px;
-            }
-            #hotel>div h2,p{
-                font-size: 13px;
-                grid-template-columns: 50% 50%;
-            }
-            #hotel>div{
-                grid-template-columns: 50% 50%;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://iconape.com/wp-content/files/re/43583/svg/bookingcom-1.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="top"></div>
     <div id="first">
-        <div id="filter">
-            <div id="one">
-                <h1>Search</h1>
-                <p>Destination/property name:</p>
-                <input oninput="getLocation()" type="text" placeholder="City Name" id="city_name">
-                <div id="container"></div>
-                <p>Check-in date</p>
-                <input type="date" placeholder="Check in Date" id="">
-                <p>Check-out date</p>
-                <input type="date" placeholder="Check-out date" id="">
-                <p>Total days stay</p>
-                <input type="text" placeholder="Person Data" id="">
-                <span><input type="checkbox"></span>
-                <span>I'm travelling for work</span>
-                <br>
-                <button onclick="searchRes()">Search</button>
-            </div>
-            <div id="two">
-                <h2>Filter by:</h2>
-                <hr>
-                <h4>Your budget(per night)</h4>
-                <input type="checkbox"> ₹ 0 - ₹ 5,000
-                <br>
-                <input type="checkbox"> ₹ 5,000 - ₹ 10,000
-                <br>
-                <input type="checkbox"> ₹ 10,000 - ₹ 15,000
-                <hr>
-                <h4>Popular filters</h4>
-                <input type="checkbox"> Breakfast included
-                <br>
-                <input type="checkbox"> Free cancellation
-                <br>
-                <input type="checkbox"> No prepayment
-                <hr>
-                <h4>Health & Safety</h4>
-                <input type="checkbox"> Properties that take health & safety measures
-                <hr>
-                <h4>Sustainability</h4>
-                <input type="checkbox"> Travel Sustainable properties
-                <hr>
-                <h4>Star rating</h4>
-                <input type="checkbox"> 2 stars
-                <br>
-                <input type="checkbox"> 3 stars
-                <br>
-                <input type="checkbox"> 4 stars
-                <br>
-                <input type="checkbox"> 5 stars
-                <br>
-                <input type="checkbox"> Unrated
-                <hr>
-                <h4>Distance from centre of Patna</h4>
-                <input type="checkbox"> Less than 1 km
-                <br>
-                <input type="checkbox"> Less than 3 km
-                <br>
-                <input type="checkbox"> Less than 5 km
-                <hr>
-                <h4>Fun things to do</h4>
-                <input type="checkbox"> Fitness centre
-                <br>
-                <input type="checkbox"> Bike tours
-                <br>
-                <input type="checkbox"> Games room
-                <br>
-                <input type="checkbox"> Happy hour
-                <br>
-                <input type="checkbox"> Beach
-                <hr>
-                <h4>Deals</h4>
-                <input type="checkbox"> All deals
-                <hr>
-                <h4>Cancellation policy</h4>
-                <input type="checkbox"> Free cancellation
-                <br>
-                <input type="checkbox"> Book without credit card
-                <br>
-                <input type="checkbox"> No prepayment
-                <hr>
-                <h4>Meals</h4>
-                <input type="checkbox"> Self catering
-                <br>
-                <input type="checkbox"> Breakfast included
-                <br>
-                <input type="checkbox"> All meals included
-                <br>
-                <input type="checkbox"> All-inclusive
-                <hr>
-                <h4>Entire places</h4>
-                <input type="checkbox"> Entire homes & apartments
-                <hr>
-                <h4>Property type</h4>
-                <input type="checkbox"> Hotels
-                <br>
-                <input type="checkbox"> Guest houses
-                <br>
-                <input type="checkbox"> Homestays
-                <br>
-                <input type="checkbox"> Apartments
-                <hr>
-                <h4>Bed preference</h4>
-                <input type="checkbox"> Twin beds
-                <br>
-                <input type="checkbox"> Double bed
-                <hr>
-                <h4>Facilities</h4>
-                <input type="checkbox"> Room service
-                <br>
-                <input type="checkbox"> 24-hour front desk
-                <br>
-                <input type="checkbox"> Parking
-                <br>
-                <input type="checkbox"> Family rooms
-                <br>
-                <input type="checkbox"> Free WiFi
-                <hr>
-                <h4>Room Facilities</h4>
-                <input type="checkbox"> Private bathroom
-                <br>
-                <input type="checkbox"> Air conditioning
-                <br>
-                <input type="checkbox"> Laptop-friendly workspace
-                <br>
-                <input type="checkbox"> Balcony
-                <br>
-                <input type="checkbox"> Flat-screen TV
-                <hr>
-                <h4>Brands</h4>
-                <input type="checkbox"> OYO Rooms
-                <br>
-                <input type="checkbox"> FabHotels
-                <br>
-                <input type="checkbox"> Treebo Hotels
-                <hr>
-                <h4>Property accessibility</h4>
-                <input type="checkbox"> Wheelchair accessible
-                <br>
-                <input type="checkbox"> Toilet with grab rails
-                <br>
-                <input type="checkbox"> Higher level toilet
-                <br>
-                <input type="checkbox"> Lower bathroom sink
-                <br>
-                <input type="checkbox"> Auditory guidance
-                <hr>
-                <h4>Room accessibility</h4>
-                <input type="checkbox"> Roll-in shower
-                <br>
-                <input type="checkbox"> Walk-in shower
-                <br>
-                <input type="checkbox"> Raised toilet
-                <br>
-                <input type="checkbox"> Lower bathroom sink
-                <br>
-                <input type="checkbox"> Lowered sink
-            </div>
+      <div id="filter">
+        <div id="one">
+          <h1>Search</h1>
+          <p>Destination/property name:</p>
+          <input
+            oninput="getLocation()"
+            type="text"
+            placeholder="City Name"
+            id="city_name"
+          />
+          <div id="container"></div>
+          <p>Check-in date</p>
+          <input type="date" placeholder="Check in Date" id="" />
+          <p>Check-out date</p>
+          <input type="date" placeholder="Check-out date" id="" />
+          <p>Total days stay</p>
+          <input type="text" placeholder="Person Data" id="" />
+          <span><input type="checkbox" /></span>
+          <span>I'm travelling for work</span>
+          <br />
+          <button onclick="searchRes()">Search</button>
         </div>
-        <div id="hotel"></div>
+        <div id="two">
+          <h2>Filter by:</h2>
+          <hr />
+          <h4>Your budget(per night)</h4>
+          <input type="checkbox" /> ₹ 0 - ₹ 5,000
+          <br />
+          <input type="checkbox" /> ₹ 5,000 - ₹ 10,000
+          <br />
+          <input type="checkbox" /> ₹ 10,000 - ₹ 15,000
+          <hr />
+          <h4>Popular filters</h4>
+          <input type="checkbox" /> Breakfast included
+          <br />
+          <input type="checkbox" /> Free cancellation
+          <br />
+          <input type="checkbox" /> No prepayment
+          <hr />
+          <h4>Health & Safety</h4>
+          <input type="checkbox" /> Properties that take health & safety
+          measures
+          <hr />
+          <h4>Sustainability</h4>
+          <input type="checkbox" /> Travel Sustainable properties
+          <hr />
+          <h4>Star rating</h4>
+          <input type="checkbox" /> 2 stars
+          <br />
+          <input type="checkbox" /> 3 stars
+          <br />
+          <input type="checkbox" /> 4 stars
+          <br />
+          <input type="checkbox" /> 5 stars
+          <br />
+          <input type="checkbox" /> Unrated
+          <hr />
+          <h4>Distance from centre of Patna</h4>
+          <input type="checkbox" /> Less than 1 km
+          <br />
+          <input type="checkbox" /> Less than 3 km
+          <br />
+          <input type="checkbox" /> Less than 5 km
+          <hr />
+          <h4>Fun things to do</h4>
+          <input type="checkbox" /> Fitness centre
+          <br />
+          <input type="checkbox" /> Bike tours
+          <br />
+          <input type="checkbox" /> Games room
+          <br />
+          <input type="checkbox" /> Happy hour
+          <br />
+          <input type="checkbox" /> Beach
+          <hr />
+          <h4>Deals</h4>
+          <input type="checkbox" /> All deals
+          <hr />
+          <h4>Cancellation policy</h4>
+          <input type="checkbox" /> Free cancellation
+          <br />
+          <input type="checkbox" /> Book without credit card
+          <br />
+          <input type="checkbox" /> No prepayment
+          <hr />
+          <h4>Meals</h4>
+          <input type="checkbox" /> Self catering
+          <br />
+          <input type="checkbox" /> Breakfast included
+          <br />
+          <input type="checkbox" /> All meals included
+          <br />
+          <input type="checkbox" /> All-inclusive
+          <hr />
+          <h4>Entire places</h4>
+          <input type="checkbox" /> Entire homes & apartments
+          <hr />
+          <h4>Property type</h4>
+          <input type="checkbox" /> Hotels
+          <br />
+          <input type="checkbox" /> Guest houses
+          <br />
+          <input type="checkbox" /> Homestays
+          <br />
+          <input type="checkbox" /> Apartments
+          <hr />
+          <h4>Bed preference</h4>
+          <input type="checkbox" /> Twin beds
+          <br />
+          <input type="checkbox" /> Double bed
+          <hr />
+          <h4>Facilities</h4>
+          <input type="checkbox" /> Room service
+          <br />
+          <input type="checkbox" /> 24-hour front desk
+          <br />
+          <input type="checkbox" /> Parking
+          <br />
+          <input type="checkbox" /> Family rooms
+          <br />
+          <input type="checkbox" /> Free WiFi
+          <hr />
+          <h4>Room Facilities</h4>
+          <input type="checkbox" /> Private bathroom
+          <br />
+          <input type="checkbox" /> Air conditioning
+          <br />
+          <input type="checkbox" /> Laptop-friendly workspace
+          <br />
+          <input type="checkbox" /> Balcony
+          <br />
+          <input type="checkbox" /> Flat-screen TV
+          <hr />
+          <h4>Brands</h4>
+          <input type="checkbox" /> OYO Rooms
+          <br />
+          <input type="checkbox" /> FabHotels
+          <br />
+          <input type="checkbox" /> Treebo Hotels
+          <hr />
+          <h4>Property accessibility</h4>
+          <input type="checkbox" /> Wheelchair accessible
+          <br />
+          <input type="checkbox" /> Toilet with grab rails
+          <br />
+          <input type="checkbox" /> Higher level toilet
+          <br />
+          <input type="checkbox" /> Lower bathroom sink
+          <br />
+          <input type="checkbox" /> Auditory guidance
+          <hr />
+          <h4>Room accessibility</h4>
+          <input type="checkbox" /> Roll-in shower
+          <br />
+          <input type="checkbox" /> Walk-in shower
+          <br />
+          <input type="checkbox" /> Raised toilet
+          <br />
+          <input type="checkbox" /> Lower bathroom sink
+          <br />
+          <input type="checkbox" /> Lowered sink
+        </div>
+      </div>
+      <div id="hotel"></div>
     </div>
-</body>
+    <footer>
+      <div id="subs"></div>
+
+      <div id="footer2"></div>
+
+      <div id="footer3"></div>
+    </footer>
+  </body>
 </html>
 <script>
-    
-    const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '293fcda454msh923b527ff9d7033p1c8c32jsn39fba2b26563',
-		'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
-	}
-};
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "293fcda454msh923b527ff9d7033p1c8c32jsn39fba2b26563",
+      "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
+    },
+  };
 
-
-
-let getLocation=()=>{
-    let city_name=document.getElementById("city_name").value;
-    fetch(`https://booking-com.p.rapidapi.com/v1/hotels/locations?locale=en-gb&name=${city_name}`, options)
-	.then(function(res){
+  let getLocation = () => {
+    let city_name = document.getElementById("city_name").value;
+    fetch(
+      `https://booking-com.p.rapidapi.com/v1/hotels/locations?locale=en-gb&name=${city_name}`,
+      options
+    )
+      .then(function (res) {
         return res.json();
-    }).then(function(res){
-        let data=res;
-            document.getElementById('container').innerHTML="";
-            data.forEach((ele)=>{
-                let div=document.createElement('div');
-                div.onclick=function(){
-                    let obj={
-                        latitide:ele.latitude,
-                        longitude:ele.longitude
-                    };
-                    document.getElementById("city_name").value=ele.label
-                    document.getElementById('container').innerHTML="";
-                    localStorage.setItem('co-ordinates',JSON.stringify(obj));
-                }
-                div.style.backgroundColor="white"
-                let name=document.createElement('h3');
-                name.innerText=ele.name;
-                let city_details=document.createElement('p');
-                city_details.innerText=ele.city_name+","+ele.region+","+ele.country
-                div.append(name,city_details);
-                document.getElementById('container').append(div);
-            })
-    })
-}
+      })
+      .then(function (res) {
+        let data = res;
+        document.getElementById("container").innerHTML = "";
+        data.forEach((ele) => {
+          let div = document.createElement("div");
+          div.onclick = function () {
+            let obj = {
+              latitide: ele.latitude,
+              longitude: ele.longitude,
+            };
+            document.getElementById("city_name").value = ele.label;
+            document.getElementById("container").innerHTML = "";
+            localStorage.setItem("co-ordinates", JSON.stringify(obj));
+          };
+          div.style.backgroundColor = "white";
+          let name = document.createElement("h3");
+          name.innerText = ele.name;
+          let city_details = document.createElement("p");
+          city_details.innerText =
+            ele.city_name + "," + ele.region + "," + ele.country;
+          div.append(name, city_details);
+          document.getElementById("container").append(div);
+        });
+      });
+  };
 
-function fetchHotel(latitude,longitude){
-    fetch(`https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates?order_by=popularity&adults_number=2&units=metric&room_number=1&checkout_date=2022-10-01&filter_by_currency=AED&locale=en-gb&checkin_date=2022-09-30&latitude=${latitude}&longitude=${longitude}&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true`, options)
-.then(function(res){
-   return res.json();
-}).then(function(res){
-    let data=res.result
-    console.log(data)
-    document.getElementById('hotel').innerHTML="";
-    data.forEach((ele)=>{
-        let div=document.createElement('div');
-        let div1=document.createElement('div');
-        let img=document.createElement('img');
-        img.src=ele.max_photo_url;
-        div1.append(img);
-        let div2=document.createElement('div');
-        let hotel_name=document.createElement('h2');
-        hotel_name.innerText=ele.hotel_name;
-        hotel_name.style.color='blue'
-        let price=document.createElement('p');
-        price.innerText="Rs "+ele.price_breakdown.gross_price;
-        price.setAttribute('class','price');
-        let city_name=document.createElement('p');
-        city_name.innerText=ele.city;
-        city_name.setAttribute('class','city');
-        let review_score=document.createElement('p');
-        review_score.innerText="Review Score: "+ele.review_score+` (${ele.review_score_word})`;
-        review_score.setAttribute('class','review');
-        let address=document.createElement('p');
-        address.innerText=ele.address;
-        let type=document.createElement('p');
-        type.innerText="Type: "+ele.accommodation_type_name;
-        div2.append(hotel_name,price,city_name,review_score,type,address);
-        div.append(div1,div2);
-        document.getElementById('hotel').append(div);
-    })
-})
-}
+  function fetchHotel(latitude, longitude) {
+    fetch(
+      `https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates?order_by=popularity&adults_number=2&units=metric&room_number=1&checkout_date=2022-10-01&filter_by_currency=AED&locale=en-gb&checkin_date=2022-09-30&latitude=${latitude}&longitude=${longitude}&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true`,
+      options
+    )
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (res) {
+        let data = res.result;
+        console.log(data);
+        document.getElementById("hotel").innerHTML = "";
+        data.forEach((ele) => {
+          let div = document.createElement("div");
+          let div1 = document.createElement("div");
+          let img = document.createElement("img");
+          img.src = ele.max_photo_url;
+          div1.append(img);
+          let div2 = document.createElement("div");
+          let hotel_name = document.createElement("h2");
+          hotel_name.innerText = ele.hotel_name;
+          hotel_name.style.color = "blue";
+          let price = document.createElement("p");
+          price.innerText = "Rs " + ele.price_breakdown.gross_price;
+          price.setAttribute("class", "price");
+          let city_name = document.createElement("p");
+          city_name.innerText = ele.city;
+          city_name.setAttribute("class", "city");
+          let review_score = document.createElement("p");
+          review_score.innerText =
+            "Review Score: " + ele.review_score + ` (${ele.review_score_word})`;
+          review_score.setAttribute("class", "review");
+          let address = document.createElement("p");
+          address.innerText = ele.address;
+          let type = document.createElement("p");
+          type.innerText = "Type: " + ele.accommodation_type_name;
+          div2.append(
+            hotel_name,
+            price,
+            city_name,
+            review_score,
+            type,
+            address
+          );
+          div.append(div1, div2);
+          document.getElementById("hotel").append(div);
+        });
+      });
+  }
 
-function searchRes(){
-    let data=JSON.parse(localStorage.getItem('co-ordinates'));
-    console.log(data)
-    let lati=data.latitide;
-    let longi=data.longitude;
-    fetchHotel(lati,longi)
-}
+  function searchRes() {
+    let data = JSON.parse(localStorage.getItem("co-ordinates"));
+    console.log(data);
+    let lati = data.latitide;
+    let longi = data.longitude;
+    fetchHotel(lati, longi);
+  }
 </script>
+<script src="./scripts/navbar.js" type="module"></script>
+<script src="./scripts/footer.js" type="module"></script>
+<script src="./scripts/signin.js" type="module"></script>

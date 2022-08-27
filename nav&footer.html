@@ -1,102 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Header.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Header.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-<body>
-    
- 
-    <div class="top">
-        <div id="adline">
-            <h1>Find your next stay</h1>
-            <h2>Search low prices on hotels, homes and much more...</h2>
-        </div>
-  </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="top">
+      <div id="adline">
+        <h1>Find your next stay</h1>
+        <h2>Search low prices on hotels, homes and much more...</h2>
+      </div>
+    </div>
 
-<!--
+    <!--
      search bar
                  -->
-<!--
+    <!--
      search bar
                 -->
-    
 
     <div id="search_container">
-        <div>
-            <i class="ri-hotel-bed-line"></i>
-            <input type="text" id="placeS" placeholder="Where are you going?" >
-        </div>
-        <div >
-            <i class="ri-calendar-2-fill"></i>
-            <input type="text" onfocus="this.type='date'" id="checkIn" placeholder="Check-in">
-            <div>-</div>
-            <input type="text" onfocus="this.type='date'" id="checkout" placeholder="Check-out">
-        </div>
+      <div>
+        <i class="ri-hotel-bed-line"></i>
+        <input type="text" id="placeS" placeholder="Where are you going?" />
+      </div>
+      <div>
+        <i class="ri-calendar-2-fill"></i>
+        <input
+          type="text"
+          onfocus="this.type='date'"
+          id="checkIn"
+          placeholder="Check-in"
+        />
+        <div>-</div>
+        <input
+          type="text"
+          onfocus="this.type='date'"
+          id="checkout"
+          placeholder="Check-out"
+        />
+      </div>
 
-       <div>
+      <div>
         <i class="ri-user-3-fill"></i>
         <div>
-            <span id="adults">2</span>
-             adults .
-             <span id="children">0</span>
-             children . 
-             <span id="room">1</span>
-             room
-             <iconify-icon id="updown"  icon="ri:code-s-fill" width="20" rotate="90deg"></iconify-icon>
-        </div> 
-  </div>
-       
-   <div ><button id="search_btn">Search</button></div>
-</div>
+          <span id="adults">2</span>
+          adults .
+          <span id="children">0</span>
+          children .
+          <span id="room">1</span>
+          room
+          <iconify-icon
+            id="updown"
+            icon="ri:code-s-fill"
+            width="20"
+            rotate="90deg"
+          ></iconify-icon>
+        </div>
+      </div>
 
-<div id="search_checkbox">
-    <input type="checkbox">
-    <label for="checkbox">I'm travelling for work</label>
-</div> 
-      
+      <div><button id="search_btn">Search</button></div>
+    </div>
 
-<div id="covid">
-        <i class="fa fa-info-circle" aria-hidden="true"></i>
-        <p>Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="https://www.booking.com/covid-19.html?aid=304142&label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AsHUkpgGwAIB0gIkNmVhMDRmOTItYjVkYi00ZWVkLWI3ZmYtMmQyOWEzMmNhZTVh2AIE4AIB">Learn more</a></p>     
-</div>
+    <div id="search_checkbox">
+      <input type="checkbox" />
+      <label for="checkbox">I'm travelling for work</label>
+    </div>
 
-<!-- ADD mid part here and remove br tag
+    <div id="covid">
+      <i class="fa fa-info-circle" aria-hidden="true"></i>
+      <p>
+        Get the advice you need. Check the latest COVID-19 restrictions before
+        you travel.
+        <a
+          href="https://www.booking.com/covid-19.html?aid=304142&label=gen173nr-1DCAEoggI46AdIM1gEaGyIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AsHUkpgGwAIB0gIkNmVhMDRmOTItYjVkYi00ZWVkLWI3ZmYtMmQyOWEzMmNhZTVh2AIE4AIB"
+          >Learn more</a
+        >
+      </p>
+    </div>
+
+    <!-- ADD mid part here and remove br tag
 ADD mid part here and remove br tag
 ADD mid part here and remove br tag
 ADD mid part here and remove br tag -->
-<footer>
-  <div id="subs"> 
-  </div>
+    <footer>
+      <div id="subs"></div>
 
+      <div id="footer2"></div>
 
-  <div id="footer2">
-  </div>
-
-
-  <div id="footer3">
-  </div>
-
-</footer>
-<br>
-</body>
+      <div id="footer3"></div>
+    </footer>
+    <br />
+  </body>
 </html>
 <!--
      scripts scripts
                       -->
-<script src="navbar.js" type="module">
-    
-</script>
-<script src="footer.js" type="module">   
-</script>
-<script src="./signin.js" type="module"></script>
+<script src="navbar.js" type="module"></script>
+<script src="footer.js" type="module"></script>
+<!-- <script src="./signin.js" type="module"></script> -->

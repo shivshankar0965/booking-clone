@@ -1,5 +1,5 @@
-function navfunc(){
-    return `<div id="navbar">
+function navfunc() {
+  return `<div id="navbar">
     <div>
      <h1>Booking.com</h1>
         <div>
@@ -17,15 +17,14 @@ function navfunc(){
 </div>
     </div>
     <div>
- <a href=""><i class="ri-hotel-bed-line"></i>Stays</a>
- <a href=""><i class="ri-flight-takeoff-line"></i>Flights</a>
- <a href=""><i class="ri-global-line" ></i>Flight + Hotel</a>
- <a href=""><i class="ri-car-line"></i>Car rentals</a>
- <a href=""><i class="ri-baidu-line"></i>Attractions</a>
- <a href=""><i class="ri-taxi-line"></i>Airport taxis</a>
+ <a href="index.html"><i class="ri-hotel-bed-line"></i>Stays</a>
+ <a href="flight.html"><i class="ri-flight-takeoff-line"></i>Flights</a>
+ <a href="#"><i class="ri-global-line" ></i>Flight + Hotel</a>
+ <a href="carrental.html"><i class="ri-car-line"></i>Car rentals</a>
+ <a href="attraction.html"><i class="ri-baidu-line"></i>Attractions</a>
+ <a href="airporttaxis.html"><i class="ri-taxi-line"></i>Airport taxis</a>
     </div>
-</div>`
+</div>`;
 }
 
-
-export default navfunc
+export default navfunc;

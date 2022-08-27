@@ -7,6 +7,7 @@
     <title>
       Cheap car hire: Find best car deals & worldwide locations booking.com
     </title>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -21,11 +22,13 @@
       href="https://iconape.com/wp-content/files/re/43583/svg/bookingcom-1.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./carrental.css" />
+    <link rel="stylesheet" href="./css/carrental.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <style></style>
   </head>
   <body>
-    <div id="nav_container"></div>
+    <div id="top"></div>
     <div id="top_search_container">
       <div class="car_search_container">
         <h3 class="car_search_heading">Car hire for any kind of trip</h3>
@@ -465,8 +468,21 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div id="subs"></div>
+
+      <div id="footer2"></div>
+
+      <div id="footer3"></div>
+    </footer>
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<script src="./carrental.js"></script>
+<script type="module">
+  import navfunc from "../components/navbarC.js";
+
+  document.getElementById("top").innerHTML = navfunc();
+</script>
+<script src="./scripts/footer.js" type="module"></script>
+<script src="./scripts/carrental.js"></script>
