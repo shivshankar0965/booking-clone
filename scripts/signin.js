@@ -32,6 +32,7 @@ function createFunc() {
     error1.innerText = "";
     error2.innerText = "";
     localStorage.setItem("loginData", JSON.stringify(loginData));
+    localStorage.setItem("flag", JSON.stringify(true));
     window.location.href = "./index.html";
   } else {
     error1 = document.getElementById("error1");
@@ -71,6 +72,13 @@ let checkLogin = () => {
     error4.style.color = "rgb(216,64,64)";
   } else {
     error4.innerText = "";
+    localStorage.setItem("flag", JSON.stringify(true));
+
     window.location.href = "./index.html";
   }
 };
+
+/*-------------sign out functions-----------*/
+document.querySelector("#sign_out").addEventListener("click", () => {
+  console.log("dfsf");
+});

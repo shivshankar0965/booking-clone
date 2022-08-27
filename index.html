@@ -47,45 +47,54 @@
     </div>
     <div id="search_container">
       <div>
-        <i class="ri-hotel-bed-line"></i>
-        <input type="text" id="placeS" placeholder="Where are you going?" />
-      </div>
-      <div>
-        <i class="ri-calendar-2-fill"></i>
-        <input
-          type="text"
-          onfocus="this.type='date'"
-          id="checkIn"
-          placeholder="Check-in"
-        />
-        <div>-</div>
-        <input
-          type="text"
-          onfocus="this.type='date'"
-          id="checkout"
-          placeholder="Check-out"
-        />
-      </div>
-
-      <div>
-        <i class="ri-user-3-fill"></i>
         <div>
-          <span id="adults">2</span>
-          adults .
-          <span id="children">0</span>
-          children .
-          <span id="room">1</span>
-          room
-          <iconify-icon
-            id="updown"
-            icon="ri:code-s-fill"
-            width="20"
-            rotate="90deg"
-          ></iconify-icon>
+          <i class="ri-hotel-bed-line"></i>
+          <input type="text" id="placeS" placeholder="Where are you going?" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="ri-calendar-2-fill"></i>
+          <input
+            type="text"
+            onfocus="this.type='date'"
+            id="checkIn"
+            placeholder="Check-in"
+          />
+        </div>
+        <div>-</div>
+        <div>
+          <input
+            type="text"
+            onfocus="this.type='date'"
+            id="checkout"
+            placeholder="Check-out"
+          />
         </div>
       </div>
 
-      <button id="search_btn">Search</button>
+      <div>
+        <div>
+          <i class="ri-user-3-fill"></i>
+          <div>
+            <span id="adults">2</span>
+            adults .
+            <span id="children">0</span>
+            children .
+            <span id="room">1</span>
+            room
+            <iconify-icon
+              id="updown"
+              icon="ri:code-s-fill"
+              width="20"
+              rotate="90deg"
+            ></iconify-icon>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button id="search_btn">Search</button>
+      </div>
     </div>
     <div id="search_checkbox">
       <input type="checkbox" />
@@ -453,6 +462,11 @@
 </html>
 
 <!-- Initialize Swiper -->
+<script>
+  document.getElementById("search_btn").addEventListener("click", () => {
+    window.location.href = "property.html";
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./scripts/swiper.js"></script>
 <script src="./scripts/navbar.js" type="module"></script>

@@ -10,7 +10,6 @@
 body {
   padding: 0%;
   margin: 0%;
-  /* width: max-content; */
   font-family: "Oxygen", sans-serif;
 }
 #navbar {
@@ -150,3 +149,54 @@ body {
     border: 1px solid rgba(248, 248, 248, 0.1);
   }
 } */
+@media all and (min-width: 660px) and (max-width: 1000px) {
+  #navbar {
+    width: 95%;
+  }
+  #navbar > div > div:last-child {
+    width: 60%;
+  }
+  #navbar > div:last-child {
+    width: 100%;
+  }
+  .ri-question-line {
+    font-size: 1.5em;
+  }
+}
+
+@media all and (min-width: 340px) and (max-width: 669px) {
+  #navbar h1 {
+    margin: 5px;
+  }
+  #navbar {
+    width: 99%;
+  }
+  #navbar img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  #navbar > :first-child a {
+    font-size: 0.7em;
+    margin: 1px;
+    border-radius: 2px;
+  }
+
+  #navbar > div > div {
+    width: 60%;
+  }
+
+  #navbar > :last-child {
+    width: 95%;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  #navbar > :last-child > a {
+    font-size: 1em;
+    width: max-content;
+  }
+
+  #navbar > :last-child > :active {
+    border: 1px solid rgba(248, 248, 248, 0.1);
+  }
+}

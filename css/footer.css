@@ -1,4 +1,7 @@
-/* footer */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 #subs {
   background-color: rgb(0, 34, 79);
@@ -75,7 +78,7 @@
 }
 #footer2 > :last-child {
   display: flex;
-  width: 70%;
+  width: 75%;
   margin: auto;
   align-items: center;
   flex-wrap: wrap;
@@ -92,7 +95,7 @@ hr {
 
 #footer3 > div {
   display: flex;
-  width: 70%;
+  width: 75%;
   margin: auto;
   justify-content: space-between;
   padding-top: 1%;
@@ -118,7 +121,7 @@ hr {
 }
 #footer3 p {
   font-family: "Oxygen", sans-serif;
-  width: 70%;
+  width: 75%;
   font-size: 0.75em;
   color: #1d1d1d;
   margin: 3em auto;
@@ -130,10 +133,10 @@ hr {
   margin: 3em;
 }
 
-#logos_ {
+div > #logos_ {
   width: 60%;
   margin: auto;
-  padding: 30px 0;
+  padding: 40px 0;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
@@ -173,12 +176,17 @@ hr {
 }
 
 @media all and (min-width: 400px) and (max-width: 659px) {
+  #subs {
+    line-height: 30px;
+  }
   #subs h1 {
     width: max-content;
+    margin: auto;
   }
 
   #subs p {
     width: max-content;
+    margin: auto;
   }
 
   #subs > div {
@@ -210,24 +218,26 @@ hr {
 }
 
 @media all and (min-width: 240px) and (max-width: 400px) {
+  #subs {
+    line-height: 30px;
+  }
   #subs h1 {
     width: max-content;
-    font-size: 0.5em;
-    margin: 1px;
+    font-size: 0.1.5em;
+    margin: auto;
     width: 100%;
     padding: 0px;
-    line-height: 1em;
   }
 
   #subs p {
-    font-size: 0.3em;
+    font-size: 1em;
     width: 100%;
-
+    margin: auto;
     width: max-content;
   }
 
   #subs > div {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   #subs input {

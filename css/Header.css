@@ -1,16 +1,16 @@
 /* only for home page */
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .header {
   background-color: rgb(0, 53, 128);
 }
+body {
+  margin: 0;
+  padding: 0%;
+  width: max-content;
+}
+
 #adline {
   font-family: "Oxygen", sans-serif;
-  width: 70%;
+  width: 75%;
   margin: auto;
   color: #fff;
   padding: 5% 0px;
@@ -22,7 +22,7 @@ body {
 }
 
 #adline h2 {
-  font-weight: 700;
+  font-weight: 400;
   margin: 1em 0em;
 }
 
@@ -38,8 +38,8 @@ search bar */
   position: relative;
   top: -4em;
   display: grid;
-  grid-template-columns: 30% auto auto 20%;
-  grid-template-rows: max-content;
+  grid-template-columns: 25% 35% 25% 15%;
+  /* grid-template-rows: max-content; */
   border-radius: 0.25em;
   width: 75%;
   margin: 2% auto;
@@ -50,17 +50,30 @@ search bar */
 #search_container > div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-right: 5px solid rgb(254, 187, 2);
   background-color: #fff;
 }
-
+#search_container > div > div {
+  display: flex;
+  align-items: center;
+}
+#search_container > div > div > input {
+  width: 100%;
+}
+#search_container > div > div > i,
+#search_container > div > div > div > i {
+  font-size: 25px;
+  color: #999;
+  padding-right: 10px;
+}
 #search_container > div:first-child {
   font-size: 1.5em;
   padding: 0.1em 0.5em;
   background-color: #fff;
 }
 
-#search_container > div:first-child > input {
+#search_container > div:first-child > div > input {
   outline: none;
   border: none;
   margin: 0 1em;
@@ -70,23 +83,22 @@ search bar */
 
 #search_container > div:nth-child(2) {
   font-size: 1em;
-  display: flex;
+  /* display: flex; */
   /* width: max-content; */
   background-color: #fff;
   padding: 0.1em 0.5em;
 }
 
 #search_container > div:nth-child(2) input {
-  display: flex;
   outline: none;
   border: none;
   width: 8em;
 }
 
 #search_container > div:nth-child(2) input::placeholder {
-  /* width: max-content; */
+  width: max-content;
   padding: 0px;
-  /* width: min-content; */
+  width: min-content;
 }
 #search_container > div:nth-child(3) {
   margin: 0%;
@@ -95,22 +107,20 @@ search bar */
   border: 1px;
   border-right: 5px solid rgb(254, 187, 2);
 }
-
-#search_container > div:nth-child(3) {
-  margin: 0%;
-  /* width: max-content; */
-  border: 1px;
-  border-right: 5px solid rgb(254, 187, 2);
+#search_container > div:nth-child(3) > div {
+  display: flex;
+  align-items: center;
 }
 
 #search_container > div:nth-child(4) {
   margin: 0%;
   padding: 0px;
-  width: 93%;
+  width: auto;
   border: none;
 }
 
 #search_btn {
+  display: block;
   margin: 0%;
   padding: 0px;
   font-weight: bold;
@@ -120,6 +130,7 @@ search bar */
   height: 100%;
   width: 100%;
   background-color: rgb(0, 113, 194);
+  cursor: pointer;
 }
 
 #search_container #updown {
@@ -139,7 +150,7 @@ search bar */
 }
 
 #covid {
-  width: 75%;
+  width: 78%;
   margin: 0px auto;
   display: flex;
   align-items: center;
@@ -156,91 +167,87 @@ search bar */
 }
 
 #covid {
+  width: 78%;
   margin: -3em auto 3em auto;
 }
-@media all and (min-width: 1000px) and (max-width: 1600px) {
-  #adline h1 {
-    font-size: 2em;
-    margin: 1em 0px;
-  }
-  #adline h2 {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin: 1em 0px;
-  }
-}
+/*@media all and (min-width:1000px) and (max-width:1600px){
+  #adline h1{
+      font-size: 2em;
+      margin: 1em 0px;
+    }
+    #adline h2{
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 1em 0px;
+    }
+    
+  }  */
 
-@media all and (min-width: 760px) and (max-width: 999px) {
+@media all and (min-width: 760px) and (max-width: 1000px) {
   #adline {
-    width: 1600px;
+    width: 98%;
   }
 
   #search_container {
-    grid-template-columns: 30% auto auto 20%;
+    width: 98%;
+    grid-template-columns: auto auto auto 25%;
     grid-template-rows: max-content;
     border-radius: 0.25em;
+    top: -48px;
+    border-right: 4px solid rgb(254, 187, 2);
   }
 
   #search_container > div {
     display: flex;
     align-items: center;
-    border-right: 5px solid rgb(254, 187, 2);
+    border-right: 4px solid rgb(254, 187, 2);
     background-color: #fff;
   }
 
   #search_container > div:first-child {
-    font-size: 1.5em;
-    padding: 0.1em 0.5em;
+    font-size: 1.3em;
     background-color: #fff;
   }
 
   #search_container > div:first-child > input {
     outline: none;
     border: none;
-    margin: 0 1em;
-    font-size: 0.6em;
-    padding: 1em;
+    font-size: 0.5em;
   }
 
   #search_container > div:nth-child(2) {
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
     width: max-content;
     background-color: #fff;
-    padding: 0.1em 0.5em;
   }
 
   #search_container > div:nth-child(2) input {
     display: flex;
     outline: none;
     border: none;
-    width: 8em;
   }
 
   #search_container > div:nth-child(2) input::placeholder {
-    /* width: max-content; */
-    padding: 0px;
-    /* width: min-content; */
+    width: max-content;
   }
   #search_container > div:nth-child(3) {
     margin: 0%;
-    padding: 0.1em 0.5em;
-    /* width: max-content; */
-    border: 1px;
-    border-right: 5px solid rgb(254, 187, 2);
+    font-size: 0.9em;
+    width: max-content;
+    border-right: 4px solid rgb(254, 187, 2);
   }
 
   #search_container > div:nth-child(3) {
     margin: 0%;
-    /* width: max-content; */
+    width: max-content;
     border: 1px;
-    border-right: 5px solid rgb(254, 187, 2);
+    border-right: 4px solid rgb(254, 187, 2);
   }
 
   #search_container > div:nth-child(4) {
     margin: 0%;
     padding: 0px;
-    width: 93%;
     border: none;
   }
 
@@ -248,8 +255,126 @@ search bar */
     margin: 0%;
     padding: 0px;
     font-weight: bold;
-    color: white;
-    font-size: 1.5em;
+    font-size: 1em;
+    border: none;
+    height: 100%;
+    border-right: 4px solid rgb(254, 187, 2);
+    width: 51%;
+    background-color: rgb(0, 113, 194);
+  }
+
+  #search_container #updown {
+    top: 0.2em;
+    position: relative;
+    color: rgb(0, 113, 194);
+  }
+
+  #search_checkbox {
+    top: -60px;
+    width: 99%;
+  }
+
+  #covid {
+    width: 98%;
+  }
+
+  #covid {
+    width: 92%;
+  }
+}
+
+@media all and (min-width: 340px) and (max-width: 759px) {
+  #adline {
+    width: 99%;
+  }
+  #adline h1 {
+    font-size: 36px;
+    width: 99%;
+  }
+  #adline h2 {
+    width: 99%;
+    font-size: 28px;
+  }
+
+  #search_container {
+    width: 95%;
+    display: grid;
+    position: none;
+    top: 20px;
+    border-radius: 0.25em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 50px 50px 50px;
+  }
+
+  #search_container > div {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+  }
+
+  #search_container > div:first-child {
+    font-size: 2em;
+    border: none;
+    grid-column: 1/-1;
+    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 5px solid rgb(254, 187, 2);
+  }
+
+  #search_container > div:first-child > div > input {
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 100%;
+    color: black;
+    font-size: 0.6em;
+    padding: 0%;
+  }
+
+  #search_container > div:nth-child(2) {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    width: 98.3%;
+    grid-column: 1/-1;
+    border-bottom: 5px solid rgb(254, 187, 2);
+    background-color: #fff;
+  }
+
+  #search_container > div:nth-child(2) input::placeholder {
+    width: auto;
+  }
+
+  #search_container > div:nth-child(3) > div {
+    width: 90%;
+    display: flex;
+  }
+  #search_container > div:nth-child(3) {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    /* display: flex; */
+    border-right: none;
+    /* justify-content: space-between; */
+    grid-column: 1/-1;
+    font-size: 1em;
+    border-bottom: 5px solid rgb(254, 187, 2);
+  }
+
+  #search_container > div:nth-child(4) {
+    margin: 0%;
+    padding: 0px;
+    border: none;
+    width: 100%;
+    grid-column: 1/4;
+  }
+
+  #search_btn {
+    margin: 0%;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 1em;
     border: none;
     height: 100%;
     width: 100%;
@@ -261,26 +386,20 @@ search bar */
     position: relative;
     color: rgb(0, 113, 194);
   }
-}
 
-/* 
-
-@media all and (min-width:340px) and (max-width:659px){
-
-  #adline h1{
-
+  #search_checkbox {
+    position: relative;
+    top: 10px;
     font-size: 1em;
-    margin: 1em 0px;
-  }
-  #adline h2{
-    font-size: .5em;
-     margin: 1em 0px;
+    width: 95%;
   }
 
-  
-#covid{
-
-width: 93%;
+  #covid {
+    position: relative;
+    top: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 30px auto;
+    width: 90%;
+  }
 }
-}
- */
