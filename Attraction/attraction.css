@@ -4,31 +4,69 @@ body {
     padding: 0%;
     font-family: 'Oxygen', sans-serif;
 }
-
+@media all and (min-width :320px) and (max-width:480px){
+    #find{
+        margin-left: -150px;
+    }
+    #guidelines {
+        
+        display: flex;
+        margin-left: 100px;
+    }
+    #Nearby_destinations{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(100px,1fr);
+    }
+}
 #find {
     display: grid;
     width: 100%;
     padding-top: 50px;
     height: 150px;
     /* border: 1px solid blue; */
+    background-color: #f2f2f2;
     padding-bottom: 50px;
 
 
 }
+
 #find p{
     margin-top: -20px;
+    color: rgb(105, 107, 107);
+    font-size: 20px;
 }
 #find input{
-    padding: 15px;
+    padding: 17px;
     width: 700px;
-    border: 3px solid yellow;
+    border: 5px solid #e8b21e;
+    border-radius: 3px;
+    border-right-style: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    
 }
+#find input:focus{
+    outline: none;
+    /* box-shadow: 0px 0px 5px #61C5FA; */
+    border-color: #e8b21e;
+    border-radius: 3px;
+}
+
+ 
 #find button{
-    padding: 15px;
+    padding: 17px;
+    font-weight: 600;
+    /* margin-right: 20px; */
     background-color: blue;
     color: aliceblue;
-    border: 3px solid yellow;
+    border: 5px solid #e8b21e;
+    border-left-style: none;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
+
 
 #find>div {
     width: 50%;
@@ -40,6 +78,9 @@ body {
 
 #find>div+div {
     display: flex;
+}
+#first_input{
+    font-size: 14px;
 }
 
 #guidelines {
@@ -54,6 +95,10 @@ body {
     margin-bottom: 10px;
     padding-left: 10px;
 
+}
+#guidelines p{
+    margin-left: 10px;
+    
 }
 
 #Nearby_destinations {
@@ -70,6 +115,7 @@ body {
     margin-top: -55px;
     color: white;
     margin-left: 15px;
+    font-weight: 600;
 }
 
 #Nearby_destinations img {
@@ -105,6 +151,8 @@ body {
     border: 1px solid rgb(226, 223, 223);
     margin-top: 50px;
     padding: 10px;
+    border-right: none;
+    border-left: none;
 }
 
 #you_covered_inner{
@@ -140,6 +188,10 @@ body {
     gap: 20px;
     
 }
+#Explore>div{
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
 #Explore>div+div{
     margin-bottom: 50px;
 }
@@ -164,4 +216,41 @@ body {
 }
 #Explore_img img:hover{
     transform: scale(1.05);
+}
+#Explore_img p:hover{
+    transform: scale(1.05);
+}
+.link{
+    text-decoration: none;
+}
+#aaa{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#bbb{
+    font-size: x-large;
+    font-weight: bolder;
+}
+#inner_country p::after{
+    content: '';
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 50%; */
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    margin: auto;
+    display: block;
+    
+}
+#inner_country p:hover::after{
+    
+    width: 100%;
+    transition: width 0.2s linear;
+}
+#Explore_img p{
+    margin-top: -50px;
+    margin-left: 10px;
+    color: #f2f2f2;
+    font-weight: bold;
 }
