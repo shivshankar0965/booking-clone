@@ -253,3 +253,26 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
+.psodof{
+  margin-left: 135px;
+}
+.brng {
+  overflow: hidden;
+}
+.brng img {
+  transition: all 1s ease-out;
+}
+.brng:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.jsdbuid {
+  overflow: hidden;
+}
+.jsdbuid img {
+  transition: all 1s ease-out;
+}
+.jsdbuid:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}

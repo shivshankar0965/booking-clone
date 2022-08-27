@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
 }
 #explore_properties {
-  width: 80%;
+  width: 85%;
   margin: 30px auto;
   position: relative;
 }
@@ -103,7 +103,7 @@ body {
 #ineternational_popular_flights,
 #trending_popular_flights,
 #domestic_popular_flights {
-  width: 80%;
+  width: 85%;
   margin: 30px auto;
   position: relative;
 }
