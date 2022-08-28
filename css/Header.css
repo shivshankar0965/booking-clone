@@ -38,7 +38,7 @@ search bar */
   position: relative;
   top: -4em;
   display: grid;
-  grid-template-columns: 25% 35% 25% 15%;
+  grid-template-columns: 20% auto auto 15%;
   /* grid-template-rows: max-content; */
   border-radius: 0.25em;
   width: 75%;
