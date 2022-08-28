@@ -88,7 +88,7 @@ padding:1px 1%;
     align-items: center;
     justify-content: space-between;
 }
-#navbar>:last-child>a:first-child{
+#navbar>:last-child>:nth-child(1){
     border: 1px solid white;
   background-color: rgb(26,74,141);
     padding: 9px ;

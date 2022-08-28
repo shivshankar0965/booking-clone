@@ -1,9 +1,10 @@
 
 /* footer */
 body{
-    width: 100%;
-  }
-  
+    width: fit-content;
+    overflow-x: hidden;
+}
+
 #subs{
 
     background-color:rgb(0,34,79) ;
