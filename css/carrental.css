@@ -8,6 +8,9 @@
 *:focus {
   outline: none;
 }
+#dp > div {
+  line-height: 20px !important;
+}
 #top_search_container {
   width: 100%;
   background-color: #f5f5f5;
