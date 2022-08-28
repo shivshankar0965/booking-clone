@@ -79,6 +79,3 @@ let checkLogin = () => {
 };
 
 /*-------------sign out functions-----------*/
-document.querySelector("#sign_out").addEventListener("click", () => {
-  console.log("dfsf");
-});

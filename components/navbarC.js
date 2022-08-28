@@ -34,7 +34,7 @@ function dp() {
 <img style="width:30px ;border:2px solid rgb(254,187,2)" src="https://cf.bstatic.com/static/img/identity/profile/b47cd0e05ec8b7831167f4f7593ead56402a6bb4.svg" alt="" />
         <div style="line-height:15px;">
         <p><b>Your account</b></p>
-        <p style="text-align:center;color:rgb(254,187,2);cursor: pointer;" id="sign_out">Sign out</p>
+        <p style="text-align:center;color:rgb(254,187,2);cursor: pointer;" id="signout">Sign out</p>
         </div>
      
         </div>`;
