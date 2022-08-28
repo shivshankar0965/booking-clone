@@ -67,6 +67,34 @@
         padding: 9px;
         border-radius: 10em;
       }
+      /* #one {
+        position: relative;
+      }
+      #one div {
+        padding: 0;
+        margin-top: -05px;
+        cursor: pointer;
+      }
+      #one p {
+        margin-bottom: 5px;
+      } */
+      #container {
+        position: absolute;
+        top: 51px;
+        left: -3px;
+        width: 300px;
+        max-height: 300px;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        background-color: #fff;
+        z-index: 100;
+      }
+      #container > div {
+        line-height: 10px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -79,10 +107,16 @@
     </div>
     <div id="search_container">
       <div>
-        <div>
+        <div id="one">
           <i class="ri-hotel-bed-line"></i>
-          <input type="text" id="placeS" placeholder="Where are you going?" />
+          <input
+            oninput="getHotelLocation()"
+            type="text"
+            id="placeS"
+            placeholder="Where are you going?"
+          />
         </div>
+        <div id="container"></div>
       </div>
       <div>
         <div>
@@ -498,6 +532,52 @@
   document.getElementById("search_btn").addEventListener("click", () => {
     window.location.href = "property.html";
   });
+
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "f5ff8f3b73msh66d41967f11035cp14257djsn62fcad3d29ae",
+      "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
+    },
+  };
+
+  let getHotelLocation = () => {
+    let city_name = document.getElementById("placeS").value;
+    fetch(
+      `https://booking-com.p.rapidapi.com/v1/hotels/locations?locale=en-gb&name=${city_name}`,
+      options
+    )
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (res) {
+        let data = res;
+        document.getElementById("container").innerHTML = "";
+        data.forEach((ele) => {
+          let div = document.createElement("div");
+          div.onclick = function () {
+            let obj = {
+              latitide: ele.latitude,
+              longitude: ele.longitude,
+            };
+            document.getElementById("places").value = ele.label;
+            document.getElementById("container").innerHTML = "";
+            localStorage.setItem("co-ordinates", JSON.stringify(obj));
+          };
+          div.style.backgroundColor = "white";
+          let name = document.createElement("h4");
+          name.style.fontSize = "12px";
+          name.innerText = ele.name;
+          let city_details = document.createElement("p");
+          city_details.style.fontSize = "14px";
+          city_details.innerText =
+            ele.city_name + "," + ele.region + "," + ele.country;
+          div.append(name, city_details);
+          document.getElementById("container").append(div);
+          console.log(ele);
+        });
+      });
+  };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./scripts/swiper.js"></script>

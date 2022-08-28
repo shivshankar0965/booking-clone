@@ -444,12 +444,6 @@
       });
   }
 
-  //   window.addEventListener("load", () => {
-  //      navigator.geolocation.getCurrentPosition((position) => {
-  //     let lat = position.coords.latitude;
-  //     let long = position.coords.longitude;
-  //   })
-
   function searchRes() {
     let data = JSON.parse(localStorage.getItem("co-ordinates"));
     console.log(data);
@@ -457,6 +451,13 @@
     let longi = data.longitude;
     fetchHotel(lati, longi);
   }
+  window.addEventListener("load", function () {
+    let data = JSON.parse(localStorage.getItem("co-ordinates"));
+    console.log(data);
+    let lati = data.latitide;
+    let longi = data.longitude;
+    fetchHotel(lati, longi);
+  });
 </script>
 <script src="./scripts/navbar.js" type="module"></script>
 <script src="./scripts/footer.js" type="module"></script>

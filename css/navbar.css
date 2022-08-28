@@ -76,12 +76,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-#navbar > :last-child > a:nth-child(1) {
-  border: 1px solid white;
-  background-color: rgb(26, 74, 141);
-  padding: 9px;
-  border-radius: 10em;
-}
+
 #navbar > :last-child a {
   display: flex;
   align-items: center;
