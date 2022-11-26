@@ -1,5 +1,5 @@
 //-------- Project Title :- Clone of Booking.com --------////\
-//-------- Netlify Title :- https://magical-toffee-cdb307.netlify.app/ --------////\
+//-------- Netlify Link :- https://magical-toffee-cdb307.netlify.app/ --------////\
 --> Problem Statement:
 To clone the website name: https://booking.com\
 
